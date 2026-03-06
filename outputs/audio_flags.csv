@@ -1,0 +1,96 @@
+trip_id,timestamp,elapsed_seconds,flag_type,severity,motion_score,audio_score,combined_score,explanation,context,peak_db,peak_sustained_sec,peak_classification
+TRIP001,2024-02-06 06:04:52,292,audio_spike,medium,0.0,0.62,0.62,Sustained elevated cabin audio (88 dB) for 112s.,Audio: argument,88.0,112.0,argument
+TRIP001,2024-02-06 06:08:55,535,audio_spike,low,0.0,0.0,0.0,Audio spike detected (91 dB). No sustained duration recorded.,Audio: conversation,91.0,0.0,conversation
+TRIP001,2024-02-06 06:10:11,611,audio_spike,low,0.0,0.15,0.15,Sustained elevated cabin audio (86 dB) for 27s.,Audio: very_loud,86.0,27.0,very_loud
+TRIP002,2024-02-06 06:04:40,280,audio_spike,low,0.0,0.0,0.0,Audio spike detected (95 dB). No sustained duration recorded.,Audio: conversation,95.0,0.0,conversation
+TRIP002,2024-02-06 07:22:00,420,audio_spike,high,0.0,0.83,0.83,Sustained elevated cabin audio (95 dB) for 150s.,Audio: argument,95.0,150.0,argument
+TRIP002,2024-02-06 06:27:37,1657,audio_spike,low,0.0,0.0,0.0,Audio spike detected (92 dB). No sustained duration recorded.,Audio: loud,92.0,0.0,loud
+TRIP003,2024-02-06 06:01:33,93,audio_spike,medium,0.0,0.37,0.37,Sustained elevated cabin audio (91 dB) for 67s.,Audio: very_loud,91.0,67.0,very_loud
+TRIP003,2024-02-06 06:10:33,633,audio_spike,high,0.0,0.68,0.68,Sustained elevated cabin audio (92 dB) for 122s.,Audio: argument,92.0,122.0,argument
+TRIP003,2024-02-06 06:13:40,820,audio_spike,low,0.0,0.0,0.0,Audio spike detected (92 dB). No sustained duration recorded.,Audio: quiet,92.0,0.0,quiet
+TRIP003,2024-02-06 06:17:09,1029,audio_spike,low,0.0,0.0,0.0,Audio spike detected (91 dB). No sustained duration recorded.,Audio: normal,91.0,0.0,normal
+TRIP003,2024-02-06 06:22:54,1374,audio_spike,low,0.0,0.0,0.0,Audio spike detected (90 dB). No sustained duration recorded.,Audio: loud,90.0,0.0,loud
+TRIP003,2024-02-06 06:27:39,1659,audio_spike,low,0.0,0.0,0.0,Audio spike detected (93 dB). No sustained duration recorded.,Audio: conversation,93.0,0.0,conversation
+TRIP004,2024-02-06 06:14:06,846,audio_spike,medium,0.0,0.67,0.67,Sustained elevated cabin audio (71 dB) for 120s.,Audio: argument,71.0,120.0,argument
+TRIP004,2024-02-06 06:23:13,1393,audio_spike,high,0.0,0.83,0.83,Sustained elevated cabin audio (63 dB) for 149s.,Audio: argument,63.0,149.0,argument
+TRIP005,2024-02-06 06:10:49,649,audio_spike,low,0.0,0.0,0.0,Audio spike detected (91 dB). No sustained duration recorded.,Audio: quiet,91.0,0.0,quiet
+TRIP005,2024-02-06 06:14:05,845,audio_spike,low,0.0,0.0,0.0,Audio spike detected (94 dB). No sustained duration recorded.,Audio: normal,94.0,0.0,normal
+TRIP005,2024-02-06 06:21:20,1280,audio_spike,high,0.0,0.76,0.76,Sustained elevated cabin audio (69 dB) for 136s.,Audio: very_loud,69.0,136.0,very_loud
+TRIP005,2024-02-06 06:25:57,1557,audio_spike,high,0.0,0.79,0.79,Sustained elevated cabin audio (73 dB) for 143s.,Audio: very_loud,73.0,143.0,very_loud
+TRIP005,2024-02-06 06:29:58,1798,audio_spike,high,0.0,0.83,0.83,Sustained elevated cabin audio (85 dB) for 150s.,Audio: argument,85.0,150.0,argument
+TRIP006,2024-02-06 06:11:00,660,audio_spike,low,0.0,0.0,0.0,Audio spike detected (95 dB). No sustained duration recorded.,Audio: normal,95.0,0.0,normal
+TRIP006,2024-02-06 06:17:53,1073,audio_spike,high,0.0,0.88,0.88,Sustained elevated cabin audio (90 dB) for 158s.,Audio: argument,90.0,158.0,argument
+TRIP006,2024-02-06 06:20:51,1251,audio_spike,low,0.0,0.0,0.0,Audio spike detected (90 dB). No sustained duration recorded.,Audio: loud,90.0,0.0,loud
+TRIP006,2024-02-06 06:24:57,1497,audio_spike,medium,0.0,0.36,0.36,Sustained elevated cabin audio (79 dB) for 65s.,Audio: argument,79.0,65.0,argument
+TRIP007,2024-02-06 06:02:17,137,audio_spike,low,0.0,0.04,0.04,Sustained elevated cabin audio (56 dB) for 8s.,Audio: very_loud,56.0,8.0,very_loud
+TRIP007,2024-02-06 06:08:24,504,audio_spike,medium,0.0,0.42,0.42,Sustained elevated cabin audio (67 dB) for 76s.,Audio: very_loud,67.0,76.0,very_loud
+TRIP007,2024-02-06 06:20:53,1253,audio_spike,high,0.0,0.69,0.69,Sustained elevated cabin audio (68 dB) for 125s.,Audio: argument,68.0,125.0,argument
+TRIP008,2024-02-06 06:08:16,496,audio_spike,high,0.0,0.75,0.75,Sustained elevated cabin audio (53 dB) for 135s.,Audio: argument,53.0,135.0,argument
+TRIP008,2024-02-06 06:10:09,609,audio_spike,low,0.0,0.29,0.29,Sustained elevated cabin audio (68 dB) for 53s.,Audio: argument,68.0,53.0,argument
+TRIP008,2024-02-06 06:18:15,1095,audio_spike,low,0.0,0.05,0.05,Sustained elevated cabin audio (97 dB) for 9s.,Audio: argument,97.0,9.0,argument
+TRIP009,2024-02-06 06:04:41,281,audio_spike,high,0.0,0.83,0.83,Sustained elevated cabin audio (56 dB) for 150s.,Audio: very_loud,56.0,150.0,very_loud
+TRIP009,2024-02-06 06:06:26,386,audio_spike,low,0.0,0.0,0.0,Audio spike detected (96 dB). No sustained duration recorded.,Audio: quiet,96.0,0.0,quiet
+TRIP009,2024-02-06 06:06:42,402,audio_spike,medium,0.0,0.39,0.39,Sustained elevated cabin audio (90 dB) for 70s.,Audio: very_loud,90.0,70.0,very_loud
+TRIP009,2024-02-06 06:26:27,1587,audio_spike,medium,0.0,0.63,0.63,Sustained elevated cabin audio (66 dB) for 114s.,Audio: argument,66.0,114.0,argument
+TRIP010,2024-02-06 06:01:26,86,audio_spike,low,0.0,0.11,0.11,Sustained elevated cabin audio (68 dB) for 20s.,Audio: argument,68.0,20.0,argument
+TRIP010,2024-02-06 06:04:09,249,audio_spike,high,0.0,0.77,0.77,Sustained elevated cabin audio (86 dB) for 139s.,Audio: argument,86.0,139.0,argument
+TRIP010,2024-02-06 06:15:13,913,audio_spike,high,0.0,1.0,1.0,Sustained elevated cabin audio (96 dB) for 180s.,Audio: argument,96.0,180.0,argument
+TRIP011,2024-02-06 06:09:44,584,audio_spike,high,0.0,0.81,0.81,Sustained elevated cabin audio (91 dB) for 146s.,Audio: argument,91.0,146.0,argument
+TRIP011,2024-02-06 06:29:09,1749,audio_spike,low,0.0,0.0,0.0,Audio spike detected (95 dB). No sustained duration recorded.,Audio: loud,95.0,0.0,loud
+TRIP012,2024-02-06 06:15:05,905,audio_spike,low,0.0,0.0,0.0,Audio spike detected (91 dB). No sustained duration recorded.,Audio: conversation,91.0,0.0,conversation
+TRIP012,2024-02-06 06:17:30,1050,audio_spike,low,0.0,0.22,0.22,Sustained elevated cabin audio (97 dB) for 40s.,Audio: argument,97.0,40.0,argument
+TRIP012,2024-02-06 06:23:54,1434,audio_spike,low,0.0,0.08,0.08,Sustained elevated cabin audio (54 dB) for 15s.,Audio: very_loud,54.0,15.0,very_loud
+TRIP012,2024-02-06 06:29:25,1765,audio_spike,medium,0.0,0.47,0.47,Sustained elevated cabin audio (53 dB) for 84s.,Audio: argument,53.0,84.0,argument
+TRIP013,2024-02-06 06:01:44,104,audio_spike,high,0.0,0.77,0.77,Sustained elevated cabin audio (93 dB) for 138s.,Audio: argument,93.0,138.0,argument
+TRIP013,2024-02-06 06:17:12,1032,audio_spike,medium,0.0,0.39,0.39,Sustained elevated cabin audio (78 dB) for 71s.,Audio: very_loud,78.0,71.0,very_loud
+TRIP013,2024-02-06 06:19:21,1161,audio_spike,low,0.0,0.22,0.22,Sustained elevated cabin audio (52 dB) for 39s.,Audio: very_loud,52.0,39.0,very_loud
+TRIP013,2024-02-06 06:21:02,1262,audio_spike,low,0.0,0.0,0.0,Audio spike detected (97 dB). No sustained duration recorded.,Audio: conversation,97.0,0.0,conversation
+TRIP013,2024-02-06 06:29:29,1769,audio_spike,low,0.0,0.0,0.0,Audio spike detected (89 dB). No sustained duration recorded.,Audio: loud,89.0,0.0,loud
+TRIP014,2024-02-06 06:17:07,1027,audio_spike,low,0.0,0.0,0.0,Audio spike detected (89 dB). No sustained duration recorded.,Audio: loud,89.0,0.0,loud
+TRIP015,2024-02-06 06:01:26,86,audio_spike,low,0.0,0.0,0.0,Audio spike detected (96 dB). No sustained duration recorded.,Audio: conversation,96.0,0.0,conversation
+TRIP015,2024-02-06 06:05:53,353,audio_spike,low,0.0,0.2,0.2,Sustained elevated cabin audio (95 dB) for 36s.,Audio: very_loud,95.0,36.0,very_loud
+TRIP015,2024-02-06 06:15:54,954,audio_spike,medium,0.0,0.49,0.49,Sustained elevated cabin audio (93 dB) for 88s.,Audio: very_loud,93.0,88.0,very_loud
+TRIP015,2024-02-06 06:18:11,1091,audio_spike,medium,0.0,0.5,0.5,Sustained elevated cabin audio (71 dB) for 90s.,Audio: very_loud,71.0,90.0,very_loud
+TRIP015,2024-02-06 06:20:24,1224,audio_spike,low,0.0,0.07,0.07,Sustained elevated cabin audio (93 dB) for 12s.,Audio: argument,93.0,12.0,argument
+TRIP015,2024-02-06 06:26:02,1562,audio_spike,low,0.0,0.19,0.19,Sustained elevated cabin audio (54 dB) for 35s.,Audio: very_loud,54.0,35.0,very_loud
+TRIP016,2024-02-06 06:09:45,585,audio_spike,low,0.0,0.0,0.0,Audio spike detected (84 dB). No sustained duration recorded.,Audio: quiet,84.0,0.0,quiet
+TRIP016,2024-02-06 06:11:54,714,audio_spike,medium,0.0,0.39,0.39,Sustained elevated cabin audio (85 dB) for 70s.,Audio: argument,85.0,70.0,argument
+TRIP016,2024-02-06 06:24:11,1451,audio_spike,low,0.0,0.0,0.0,Audio spike detected (86 dB). No sustained duration recorded.,Audio: conversation,86.0,0.0,conversation
+TRIP017,2024-02-06 06:09:52,592,audio_spike,high,0.0,0.82,0.82,Sustained elevated cabin audio (64 dB) for 147s.,Audio: argument,64.0,147.0,argument
+TRIP017,2024-02-06 06:13:12,792,audio_spike,medium,0.0,0.51,0.51,Sustained elevated cabin audio (85 dB) for 92s.,Audio: argument,85.0,92.0,argument
+TRIP018,2024-02-06 06:05:23,323,audio_spike,high,0.0,0.67,0.67,Sustained elevated cabin audio (76 dB) for 121s.,Audio: argument,76.0,121.0,argument
+TRIP018,2024-02-06 06:11:05,665,audio_spike,low,0.0,0.0,0.0,Audio spike detected (92 dB). No sustained duration recorded.,Audio: loud,92.0,0.0,loud
+TRIP018,2024-02-06 06:15:46,946,audio_spike,low,0.0,0.0,0.0,Audio spike detected (93 dB). No sustained duration recorded.,Audio: conversation,93.0,0.0,conversation
+TRIP019,2024-02-06 06:10:30,630,audio_spike,high,0.0,0.89,0.89,Sustained elevated cabin audio (96 dB) for 161s.,Audio: argument,96.0,161.0,argument
+TRIP020,2024-02-06 06:14:50,890,audio_spike,low,0.0,0.08,0.08,Sustained elevated cabin audio (67 dB) for 14s.,Audio: argument,67.0,14.0,argument
+TRIP021,2024-02-06 06:05:56,356,audio_spike,low,0.0,0.32,0.32,Sustained elevated cabin audio (86 dB) for 57s.,Audio: very_loud,86.0,57.0,very_loud
+TRIP021,2024-02-06 06:18:32,1112,audio_spike,low,0.0,0.0,0.0,Audio spike detected (83 dB). No sustained duration recorded.,Audio: loud,83.0,0.0,loud
+TRIP021,2024-02-06 06:26:43,1603,audio_spike,low,0.0,0.32,0.32,Sustained elevated cabin audio (87 dB) for 58s.,Audio: very_loud,87.0,58.0,very_loud
+TRIP022,2024-02-06 06:11:51,711,audio_spike,low,0.0,0.0,0.0,Audio spike detected (95 dB). No sustained duration recorded.,Audio: quiet,95.0,0.0,quiet
+TRIP022,2024-02-06 06:17:09,1029,audio_spike,low,0.0,0.0,0.0,Audio spike detected (95 dB). No sustained duration recorded.,Audio: conversation,95.0,0.0,conversation
+TRIP022,2024-02-06 06:21:18,1278,audio_spike,medium,0.0,0.48,0.48,Sustained elevated cabin audio (96 dB) for 86s.,Audio: very_loud,96.0,86.0,very_loud
+TRIP022,2024-02-06 06:25:45,1545,audio_spike,high,0.0,0.91,0.91,Sustained elevated cabin audio (96 dB) for 164s.,Audio: argument,96.0,164.0,argument
+TRIP023,2024-02-06 06:04:00,240,audio_spike,low,0.0,0.0,0.0,Audio spike detected (90 dB). No sustained duration recorded.,Audio: conversation,90.0,0.0,conversation
+TRIP023,2024-02-06 06:06:21,381,audio_spike,medium,0.0,0.48,0.48,Sustained elevated cabin audio (50 dB) for 86s.,Audio: argument,50.0,86.0,argument
+TRIP023,2024-02-06 06:08:03,483,audio_spike,low,0.0,0.17,0.17,Sustained elevated cabin audio (53 dB) for 30s.,Audio: argument,53.0,30.0,argument
+TRIP023,2024-02-06 06:18:44,1124,audio_spike,high,0.0,0.94,0.94,Sustained elevated cabin audio (80 dB) for 170s.,Audio: very_loud,80.0,170.0,very_loud
+TRIP024,2024-02-06 06:01:45,105,audio_spike,low,0.0,0.0,0.0,Audio spike detected (87 dB). No sustained duration recorded.,Audio: loud,87.0,0.0,loud
+TRIP025,2024-02-06 06:04:55,295,audio_spike,high,0.0,0.72,0.72,Sustained elevated cabin audio (62 dB) for 130s.,Audio: very_loud,62.0,130.0,very_loud
+TRIP025,2024-02-06 06:21:53,1313,audio_spike,medium,0.0,0.59,0.59,Sustained elevated cabin audio (96 dB) for 107s.,Audio: argument,96.0,107.0,argument
+TRIP026,2024-02-06 06:02:49,169,audio_spike,low,0.0,0.0,0.0,Audio spike detected (96 dB). No sustained duration recorded.,Audio: loud,96.0,0.0,loud
+TRIP026,2024-02-06 06:10:04,604,audio_spike,low,0.0,0.27,0.27,Sustained elevated cabin audio (86 dB) for 49s.,Audio: argument,86.0,49.0,argument
+TRIP026,2024-02-06 06:16:10,970,audio_spike,low,0.0,0.0,0.0,Audio spike detected (83 dB). No sustained duration recorded.,Audio: loud,83.0,0.0,loud
+TRIP026,2024-02-06 06:18:49,1129,audio_spike,low,0.0,0.12,0.12,Sustained elevated cabin audio (58 dB) for 22s.,Audio: very_loud,58.0,22.0,very_loud
+TRIP026,2024-02-06 06:23:39,1419,audio_spike,high,0.0,0.68,0.68,Sustained elevated cabin audio (66 dB) for 123s.,Audio: very_loud,66.0,123.0,very_loud
+TRIP026,2024-02-06 06:27:33,1653,audio_spike,low,0.0,0.0,0.0,Audio spike detected (93 dB). No sustained duration recorded.,Audio: loud,93.0,0.0,loud
+TRIP027,2024-02-06 06:00:06,6,audio_spike,low,0.0,0.0,0.0,Audio spike detected (97 dB). No sustained duration recorded.,Audio: normal,97.0,0.0,normal
+TRIP027,2024-02-06 06:07:27,447,audio_spike,low,0.0,0.0,0.0,Audio spike detected (98 dB). No sustained duration recorded.,Audio: normal,98.0,0.0,normal
+TRIP027,2024-02-06 06:18:23,1103,audio_spike,high,0.0,0.99,0.99,Sustained elevated cabin audio (67 dB) for 178s.,Audio: very_loud,67.0,178.0,very_loud
+TRIP027,2024-02-06 06:21:16,1276,audio_spike,low,0.0,0.17,0.17,Sustained elevated cabin audio (93 dB) for 30s.,Audio: very_loud,93.0,30.0,very_loud
+TRIP028,2024-02-06 06:05:22,322,audio_spike,high,0.0,0.99,0.99,Sustained elevated cabin audio (95 dB) for 179s.,Audio: argument,95.0,179.0,argument
+TRIP028,2024-02-06 06:28:57,1737,audio_spike,low,0.0,0.08,0.08,Sustained elevated cabin audio (97 dB) for 15s.,Audio: argument,97.0,15.0,argument
+TRIP029,2024-02-06 06:09:01,541,audio_spike,low,0.0,0.0,0.0,Audio spike detected (96 dB). No sustained duration recorded.,Audio: conversation,96.0,0.0,conversation
+TRIP029,2024-02-06 06:13:39,819,audio_spike,low,0.0,0.0,0.0,Audio spike detected (97 dB). No sustained duration recorded.,Audio: loud,97.0,0.0,loud
+TRIP029,2024-02-06 06:21:24,1284,audio_spike,low,0.0,0.0,0.0,Audio spike detected (84 dB). No sustained duration recorded.,Audio: conversation,84.0,0.0,conversation
+TRIP030,2024-02-06 06:19:43,1183,audio_spike,low,0.0,0.0,0.0,Audio spike detected (96 dB). No sustained duration recorded.,Audio: conversation,96.0,0.0,conversation
+TRIP030,2024-02-06 06:26:14,1574,audio_spike,high,0.0,0.81,0.81,Sustained elevated cabin audio (83 dB) for 146s.,Audio: argument,83.0,146.0,argument
