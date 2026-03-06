@@ -31,23 +31,31 @@ df.loc[decel_mask, 'driving_event'] = 'Sudden Deceleration'
 accel_mask = df['long_accel'] > THRESH_ACCEL
 df.loc[accel_mask, 'driving_event'] = 'Sudden Acceleration'
 
+
 #motion score calculation
-REF_LONG = 2.5      
-REF_MAN = 0.10      
-REF_DIR = 0.8
-df['Z_long'] = df['long_accel'].abs() / REF_LONG
-df['Z_man'] = df['manuever_acceleration'] / REF_MAN
-df['Z_dir'] = df['acc_dir_change'] / REF_DIR
-df['loss_long'] = df['Z_long']**2
-df['loss_lat'] = (df['Z_man'] * df['Z_dir'])**2 
-df['total_loss'] = df['loss_long'] + df['loss_lat']
-STRICTNESS = 0.1
-df['cumulative_loss'] = df.groupby('trip_id')['total_loss'].cumsum()
-df['dynamic_trip_score'] = 1.0 - (df['cumulative_loss'] * STRICTNESS)
-df['dynamic_trip_score'] = df['dynamic_trip_score'].clip(lower=0.0, upper=1.0)
+THRESH_ACCEL = 2.5       
+THRESH_DECEL = -0.5     
+THRESH_MAN_ACC = 0.10  
+THRESH_DIR = 0.8
+PENALTY_MANEUVER = 0.15  
+PENALTY_ACCEL = 0.05     
+PENALTY_DECEL = 0.05
+
+def calculate_penalty(row):
+    penalty = 0.0
+    if row['manuever_acceleration'] > THRESH_MAN_ACC or row['acc_dir_change'] > THRESH_DIR:
+        penalty += PENALTY_MANEUVER
+    if row['long_accel'] > THRESH_ACCEL:
+        penalty += PENALTY_ACCEL
+    if row['long_accel'] < THRESH_DECEL:
+        penalty += PENALTY_DECEL
+    return penalty
+df['event_penalty'] = df.apply(calculate_penalty, axis=1)
+df['cumulative_penalty'] = df.groupby('trip_id')['event_penalty'].cumsum()
+df['dynamic_trip_score'] = (1.0 - df['cumulative_penalty']).clip(lower=0.0, upper=1.0)
 
 
-
-final_df=df.drop(columns=['dt','accl_diff','acc_dir','horizontal_acceleration','Z_long','Z_man','Z_dir','loss_long','loss_lat','total_loss','speed_ms','long_accel','cumulative_loss'])
+final_df=df.drop(columns=['dt','accl_diff','acc_dir','horizontal_acceleration','speed_ms','long_accel','event_penalty','cumulative_penalty'])
 final_df.to_csv('processed_data.csv',index=False)
+
 
