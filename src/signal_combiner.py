@@ -273,10 +273,30 @@ def _fmt(v) -> str:
     return str(v)
 
 
+# ── Train / test split by trip ────────────────────────────────────────────────
+
+def trip_split(windows: list[dict], test_frac: float = 0.2, seed: int = RANDOM_STATE):
+    """
+    Split windows into train / test by trip_id (never splits a trip across sets).
+    Returns (train_windows, test_windows, train_trip_ids, test_trip_ids).
+    """
+    all_trips = sorted(set(w["trip_id"] for w in windows))
+    rng = np.random.default_rng(seed)
+    rng.shuffle(all_trips)
+
+    n_test  = max(1, int(len(all_trips) * test_frac))
+    test_ids  = set(all_trips[:n_test])
+    train_ids = set(all_trips[n_test:])
+
+    train = [w for w in windows if w["trip_id"] in train_ids]
+    test  = [w for w in windows if w["trip_id"] in test_ids]
+    return train, test, train_ids, test_ids
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def run(motion_path=MOTION_CSV, audio_path=AUDIO_CSV):
-    print("[1/4] Loading data...")
+    print("[1/5] Loading data...")
     motion = load_motion(motion_path)
     audio  = load_audio(audio_path)
     print(f"      Motion: {sum(len(v) for v in motion.values())} readings, "
@@ -284,7 +304,7 @@ def run(motion_path=MOTION_CSV, audio_path=AUDIO_CSV):
     print(f"      Audio:  {sum(len(v) for v in audio.values())} readings, "
           f"{len(audio)} trips")
 
-    print("\n[2/4] Time-window join (±30s)...")
+    print("\n[2/5] Time-window join (±30s)...")
     windows = join(motion, audio)
     both   = sum(1 for w in windows if w["has_motion"] and w["has_audio"])
     m_only = sum(1 for w in windows if w["has_motion"] and not w["has_audio"])
@@ -295,23 +315,48 @@ def run(motion_path=MOTION_CSV, audio_path=AUDIO_CSV):
     print(f"        audio only   : {a_only}")
 
     write_csv(
-        [{k: _fmt(v) if isinstance(v, float) else v
-          for k, v in w.items()} for w in windows],
+        [{k: _fmt(v) if isinstance(v, float) else v for k, v in w.items()}
+         for w in windows],
         OUT_WINDOWS,
     )
     print(f"      Written → {OUT_WINDOWS}")
 
-    print("\n[3/4] Training Isolation Forest...")
-    model, scaler, anomaly_scores, predictions = train_isolation_forest(windows)
-    n_anomalies = int((predictions == -1).sum())
-    print(f"      Anomalies detected: {n_anomalies} / {len(windows)} "
-          f"({n_anomalies/len(windows)*100:.1f}%)")
-    print(f"      Anomaly score: min={anomaly_scores.min():.3f}  "
-          f"max={anomaly_scores.max():.3f}  mean={anomaly_scores.mean():.3f}")
+    print("\n[3/5] Train / test split (80 / 20 by trip)...")
+    train_w, test_w, train_ids, test_ids = trip_split(windows, test_frac=0.2)
+    print(f"      Train: {len(train_w)} windows across {len(train_ids)} trips")
+    print(f"      Test:  {len(test_w)}  windows across {len(test_ids)}  trips")
+    print(f"      Test trips: {sorted(test_ids)}")
 
-    print("\n[4/4] Writing scored output...")
+    print("\n[4/5] Training Isolation Forest on train set...")
+    model, scaler, train_scores, train_preds = train_isolation_forest(train_w)
+    n_anom_train = int((train_preds == -1).sum())
+    print(f"      Train anomalies: {n_anom_train} / {len(train_w)} "
+          f"({n_anom_train/len(train_w)*100:.1f}%)")
+
+    # ── Inference on held-out test set ───────────────────────────────────────
+    print("\n[5/5] Inference on held-out test set...")
+    X_test_raw = np.array([
+        [w["manuever_acceleration"], w["acc_dir_change"],
+         w["peak_db"], w["peak_sustained_sec"]]
+        for w in test_w
+    ], dtype=float)
+    X_test = impute(X_test_raw)
+    X_test_scaled    = scaler.transform(X_test)
+    test_raw_scores  = model.decision_function(X_test_scaled)
+    test_preds       = model.predict(X_test_scaled)
+
+    lo = test_raw_scores.min(); hi = test_raw_scores.max()
+    test_scores = 1.0 - (test_raw_scores - lo) / (hi - lo + 1e-9)
+
+    n_anom_test = int((test_preds == -1).sum())
+    print(f"      Test  anomalies: {n_anom_test} / {len(test_w)} "
+          f"({n_anom_test/len(test_w)*100:.1f}%)")
+    print(f"      Test anomaly score: min={test_scores.min():.3f}  "
+          f"max={test_scores.max():.3f}  mean={test_scores.mean():.3f}")
+
+    # ── Write inference results ───────────────────────────────────────────────
     scored = []
-    for w, score, pred in zip(windows, anomaly_scores, predictions):
+    for w, score, pred in zip(test_w, test_scores, test_preds):
         sev = severity_from_anomaly(float(score))
         scored.append({
             "trip_id":               w["trip_id"],
@@ -327,6 +372,7 @@ def run(motion_path=MOTION_CSV, audio_path=AUDIO_CSV):
             "anomaly_score":         f"{score:.4f}",
             "is_anomaly":            pred == -1,
             "severity":              sev,
+            "split":                 "test",
         })
 
     write_csv(scored, OUT_SCORES)
@@ -334,26 +380,27 @@ def run(motion_path=MOTION_CSV, audio_path=AUDIO_CSV):
 
     OUT_MODEL.parent.mkdir(parents=True, exist_ok=True)
     with open(OUT_MODEL, "wb") as f:
-        pickle.dump({"model": model, "scaler": scaler, "features": FEATURES}, f)
+        pickle.dump({"model": model, "scaler": scaler, "features": FEATURES,
+                     "train_trips": sorted(train_ids),
+                     "test_trips":  sorted(test_ids)}, f)
     print(f"      Model  → {OUT_MODEL}")
 
-    # Summary
-    print("\n=== Top 10 most anomalous windows ===")
+    # ── Summary ───────────────────────────────────────────────────────────────
+    print("\n=== Top 10 anomalous windows (test set) ===")
     top = sorted(scored, key=lambda r: float(r["anomaly_score"]), reverse=True)[:10]
     print(f"  {'trip':8s}  {'t(s)':6s}  {'score':6s}  {'sev':6s}  "
           f"{'man_acc':8s}  {'dir_chg':8s}  {'dB':6s}  {'sus':6s}  classification")
     for r in top:
-        print(f"  {r['trip_id']:8s}  {r['elapsed_seconds']:6d}  "
+        print(f"  {r['trip_id']:8s}  {r['elapsed_seconds']:6}  "
               f"{float(r['anomaly_score']):.3f}   {r['severity']:6s}  "
               f"{r['manuever_acceleration']:8s}  {r['acc_dir_change']:8s}  "
               f"{r['peak_db']:6s}  {r['peak_sustained_sec']:6s}  "
               f"{r['peak_classification']}")
 
-    # Severity breakdown
     sev_counts = {"high": 0, "medium": 0, "low": 0, "none": 0}
     for r in scored:
         sev_counts[r["severity"]] += 1
-    print("\n=== Severity breakdown ===")
+    print("\n=== Severity breakdown (test set) ===")
     for s, c in sev_counts.items():
         print(f"  {s:6s}: {c:4d}  ({c/len(scored)*100:.1f}%)")
 
