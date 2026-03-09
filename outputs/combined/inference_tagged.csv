@@ -1,0 +1,590 @@
+trip_id,elapsed_seconds,manuever_acceleration,acc_dir_change,peak_db,peak_sustained_sec,peak_classification,has_motion,has_audio,anomaly_score,predicted_anomaly,predicted_severity,gt_flag_exists,gt_elapsed_seconds,gt_elapsed_gap_sec,gt_flag_type,gt_severity,gt_motion_score,gt_audio_score,gt_combined_score,gt_explanation,severity_match,result,risk_score,signal_driver,risk_tag,driver_guidance
+TRIP006,660,,,95.0000,0.0000,normal,False,True,0.3084,False,none,False,,562,,,,,,,,TN,3.1,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP006,1073,,,90.0000,158.0000,argument,False,True,0.7092,True,medium,False,,149,,,,,,,,FP,7.1,audio,high_stress,High stress detected. Your wellbeing matters — pace yourself. Flagged by: elevated cabin noise.
+TRIP006,1251,,,90.0000,0.0000,loud,False,True,0.2101,False,none,True,1222,29,harsh_braking,low,0.4,0.91,0.66,Event 102: motion_score=0.4 audio_score=0.91,False,FN,2.1,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP006,1497,,,79.0000,65.0000,argument,False,True,0.3652,False,none,False,,275,,,,,,,,TN,3.7,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP018,323,,,76.0000,121.0000,argument,False,True,0.5132,False,low,False,,1163,,,,,,,,TN,5.1,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP018,665,,,92.0000,0.0000,loud,False,True,0.2354,False,none,False,,821,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP018,946,,,93.0000,0.0000,conversation,False,True,0.2605,False,none,False,,540,,,,,,,,TN,2.6,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP021,356,,,86.0000,57.0000,very_loud,False,True,0.4605,False,low,False,,,,,,,,,,TN,4.6,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP021,1112,,,83.0000,0.0000,loud,False,True,0.0808,False,none,False,,,,,,,,,,TN,0.8,audio,smooth_trip,Trip running smoothly.
+TRIP021,1603,,,87.0000,58.0000,very_loud,False,True,0.4730,False,low,False,,,,,,,,,,TN,4.7,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP026,169,,,96.0000,0.0000,loud,False,True,0.3390,False,none,False,,,,,,,,,,TN,3.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP026,604,,,86.0000,49.0000,argument,False,True,0.4178,False,low,False,,,,,,,,,,TN,4.2,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP026,970,,,83.0000,0.0000,loud,False,True,0.0808,False,none,False,,,,,,,,,,TN,0.8,audio,smooth_trip,Trip running smoothly.
+TRIP026,1129,,,58.0000,22.0000,very_loud,False,True,0.4576,False,low,False,,,,,,,,,,TN,4.6,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP026,1419,,,66.0000,123.0000,very_loud,False,True,0.5690,False,medium,False,,,,,,,,,,TN,5.7,audio,notable_event,Notable moment flagged. This may affect your trip quality score. Flagged by: elevated cabin noise.
+TRIP026,1653,,,93.0000,0.0000,loud,False,True,0.2605,False,none,False,,,,,,,,,,TN,2.6,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP028,322,,,95.0000,179.0000,argument,False,True,0.8460,True,high,True,270,52,harsh_braking,high,0.76,0.64,0.7,Event 52: motion_score=0.76 audio_score=0.64,True,TP,8.5,audio,high_stress,High stress detected. Your wellbeing matters — pace yourself. Flagged by: elevated cabin noise.
+TRIP028,1737,,,97.0000,15.0000,argument,False,True,0.5575,False,medium,False,,1004,,,,,,,,TN,5.6,audio,notable_event,Notable moment flagged. This may affect your trip quality score. Flagged by: elevated cabin noise.
+TRIP040,0,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP040,0,0.0719,3.6271,,,,True,False,0.7532,True,high,False,,,,,,,,,,FP,7.5,motion,high_stress,High stress detected. Your wellbeing matters — pace yourself. Flagged by: sharp maneuver.
+TRIP040,60,0.0113,0.3901,,,,True,False,0.3719,False,none,False,,,,,,,,,,TN,3.7,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP040,60,0.2287,0.7046,,,,True,False,0.6735,True,medium,False,,,,,,,,,,FP,6.7,motion,notable_event,Notable moment flagged. This may affect your trip quality score. Flagged by: sharp maneuver.
+TRIP040,60,0.0232,0.2422,,,,True,False,0.3586,False,none,False,,,,,,,,,,TN,3.6,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP040,60,0.1750,0.5626,,,,True,False,0.5930,False,medium,False,,,,,,,,,,TN,5.9,motion,notable_event,Notable moment flagged. This may affect your trip quality score. Flagged by: sharp maneuver.
+TRIP040,60,0.2209,0.2008,,,,True,False,0.6327,True,medium,False,,,,,,,,,,FP,6.3,motion,notable_event,Notable moment flagged. This may affect your trip quality score. Flagged by: sharp maneuver.
+TRIP040,240,0.0109,0.0121,73.0000,0.0000,normal,True,True,0.2065,False,none,False,,,,,,,,,,TN,2.1,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP040,240,0.0000,0.0000,73.0000,0.0000,normal,True,True,0.1288,False,none,False,,,,,,,,,,TN,1.3,combined,smooth_trip,Trip running smoothly.
+TRIP040,420,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP040,480,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP040,600,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP040,780,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP040,1020,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP040,1080,0.0000,0.0000,57.0000,0.0000,normal,True,True,0.3220,False,none,False,,,,,,,,,,TN,3.2,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP040,1080,0.4195,2.7182,57.0000,0.0000,normal,True,True,0.9552,True,high,False,,,,,,,,,,FP,9.6,combined,critical_moment,Significant event on this trip. Review it after your shift. Flagged by: sharp maneuver and elevated cabin noise.
+TRIP046,0,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,596,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,10,0.0752,0.0864,,,,True,False,0.3719,False,none,False,,586,,,,,,,,TN,3.7,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,20,0.0519,0.6359,,,,True,False,0.4349,False,low,False,,576,,,,,,,,TN,4.3,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP046,30,0.0196,0.3204,,,,True,False,0.3660,False,none,False,,566,,,,,,,,TN,3.7,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,40,0.0769,0.3772,,,,True,False,0.4151,False,low,False,,556,,,,,,,,TN,4.2,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP046,50,0.0077,0.0354,,,,True,False,0.2541,False,none,False,,546,,,,,,,,TN,2.5,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,60,0.0447,0.2327,,,,True,False,0.3788,False,none,False,,536,,,,,,,,TN,3.8,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,70,0.0348,0.0443,,,,True,False,0.3198,False,none,False,,526,,,,,,,,TN,3.2,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,80,0.0429,0.1418,,,,True,False,0.3383,False,none,False,,516,,,,,,,,TN,3.4,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,90,0.1580,4.9628,,,,True,False,0.8694,True,high,False,,506,,,,,,,,FP,8.7,motion,critical_moment,Significant event on this trip. Review it after your shift. Flagged by: sharp maneuver.
+TRIP046,100,0.0569,4.7692,,,,True,False,0.7967,True,high,False,,496,,,,,,,,FP,8.0,motion,high_stress,High stress detected. Your wellbeing matters — pace yourself. Flagged by: sharp maneuver.
+TRIP046,111,0.1242,0.1087,,,,True,False,0.4705,False,low,False,,485,,,,,,,,TN,4.7,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP046,120,0.0342,4.5768,,,,True,False,0.7965,True,high,False,,476,,,,,,,,FP,8.0,motion,high_stress,High stress detected. Your wellbeing matters — pace yourself. Flagged by: sharp maneuver.
+TRIP046,131,0.1531,5.6669,,,,True,False,0.9739,True,high,False,,465,,,,,,,,FP,9.7,motion,critical_moment,Significant event on this trip. Review it after your shift. Flagged by: sharp maneuver.
+TRIP046,140,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,456,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,150,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,446,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,161,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,435,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,170,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,426,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,181,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,415,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,190,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,406,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,200,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,396,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,211,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,385,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,220,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,376,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,230,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,366,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,240,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,356,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,250,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,346,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,260,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,336,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,270,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,326,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,281,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,315,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,290,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,306,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,300,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,296,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,311,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,285,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,320,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,276,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,331,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,265,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,341,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,255,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,350,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,246,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,360,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,236,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,370,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,226,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,381,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,215,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,391,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,205,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,401,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,195,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,411,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,185,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,420,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,176,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,430,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,166,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,440,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,156,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,450,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,146,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,460,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,136,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,470,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,126,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,480,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,116,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,490,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,106,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,500,0.0000,0.0000,55.1000,0.0000,normal,True,True,0.3333,False,none,False,,96,,,,,,,,TN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,510,0.0000,0.0000,55.1000,0.0000,normal,True,True,0.3333,False,none,False,,86,,,,,,,,TN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,521,0.0000,0.0000,55.1000,0.0000,normal,True,True,0.3333,False,none,False,,75,,,,,,,,TN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,530,0.0000,0.0000,55.1000,0.0000,normal,True,True,0.3333,False,none,False,,66,,,,,,,,TN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,540,0.0000,0.0000,55.1000,0.0000,normal,True,True,0.3333,False,none,True,596,56,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,550,0.0000,0.0000,55.1000,0.0000,normal,True,True,0.3333,False,none,True,596,46,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,560,0.0000,0.0000,,,,True,False,0.1712,False,none,True,596,36,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,570,0.0000,0.0000,,,,True,False,0.1712,False,none,True,596,26,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,580,0.0000,0.0000,,,,True,False,0.1712,False,none,True,596,16,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,590,0.0000,0.0000,,,,True,False,0.1712,False,none,True,596,6,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,600,0.0000,0.0000,,,,True,False,0.1712,False,none,True,596,4,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,611,0.0000,0.0000,,,,True,False,0.1712,False,none,True,596,15,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,620,0.0000,0.0000,,,,True,False,0.1712,False,none,True,596,24,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,630,0.0000,0.0000,,,,True,False,0.1712,False,none,True,596,34,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,640,0.0000,0.0000,,,,True,False,0.1712,False,none,True,596,44,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,650,0.0000,0.0000,,,,True,False,0.1712,False,none,True,596,54,harsh_braking,low,0.84,0.3,0.57,Event 70: motion_score=0.84 audio_score=0.3,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,660,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,64,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,671,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,75,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,680,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,84,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,690,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,94,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,700,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,104,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,710,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,114,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,721,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,125,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,730,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,134,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,740,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,144,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,751,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,155,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,760,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,164,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,770,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,174,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,781,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,185,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,790,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,194,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,800,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,204,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,810,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,214,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,820,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,224,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,830,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,234,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,840,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,244,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,851,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,255,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,860,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,264,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,870,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,274,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,881,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,285,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,890,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,294,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,900,0.0000,0.0000,53.9000,0.0000,normal,True,True,0.3314,False,none,False,,304,,,,,,,,TN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,911,0.0000,0.0000,53.9000,0.0000,normal,True,True,0.3314,False,none,False,,315,,,,,,,,TN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,920,0.0000,0.0000,53.9000,0.0000,normal,True,True,0.3314,False,none,False,,324,,,,,,,,TN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,930,0.0000,0.0000,53.9000,0.0000,normal,True,True,0.3314,False,none,False,,334,,,,,,,,TN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,941,0.0000,0.0000,53.9000,0.0000,normal,True,True,0.3314,False,none,False,,345,,,,,,,,TN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,950,0.0000,0.0000,53.9000,0.0000,normal,True,True,0.3314,False,none,False,,354,,,,,,,,TN,3.3,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP046,960,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,364,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,970,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,374,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,981,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,385,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,990,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,394,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,1000,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,404,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,1010,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,414,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,1020,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,424,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP046,1030,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,434,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,0,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,965,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,10,0.0415,5.6913,,,,True,False,0.9231,True,high,False,,955,,,,,,,,FP,9.2,motion,critical_moment,Significant event on this trip. Review it after your shift. Flagged by: sharp maneuver.
+TRIP047,20,0.3080,5.5441,,,,True,False,1.0000,True,high,False,,945,,,,,,,,FP,10.0,motion,critical_moment,Significant event on this trip. Review it after your shift. Flagged by: sharp maneuver.
+TRIP047,30,0.1941,0.1770,,,,True,False,0.5879,False,medium,False,,935,,,,,,,,TN,5.9,motion,notable_event,Notable moment flagged. This may affect your trip quality score. Flagged by: sharp maneuver.
+TRIP047,40,0.0466,0.3327,,,,True,False,0.3919,False,none,False,,925,,,,,,,,TN,3.9,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,50,0.1061,0.0664,,,,True,False,0.4430,False,low,False,,915,,,,,,,,TN,4.4,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP047,60,0.0204,0.2152,,,,True,False,0.3512,False,none,False,,905,,,,,,,,TN,3.5,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,70,0.0676,0.7482,,,,True,False,0.4687,False,low,False,,895,,,,,,,,TN,4.7,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP047,80,0.0257,0.0298,,,,True,False,0.2908,False,none,False,,885,,,,,,,,TN,2.9,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,90,0.1635,4.9750,,,,True,False,0.8704,True,high,False,,875,,,,,,,,FP,8.7,motion,critical_moment,Significant event on this trip. Review it after your shift. Flagged by: sharp maneuver.
+TRIP047,100,0.0956,5.9216,,,,True,False,0.9433,True,high,False,,865,,,,,,,,FP,9.4,motion,critical_moment,Significant event on this trip. Review it after your shift. Flagged by: sharp maneuver.
+TRIP047,110,0.0326,5.5655,,,,True,False,0.9074,True,high,False,,855,,,,,,,,FP,9.1,motion,critical_moment,Significant event on this trip. Review it after your shift. Flagged by: sharp maneuver.
+TRIP047,120,0.0870,5.4186,,,,True,False,0.9046,True,high,False,,845,,,,,,,,FP,9.0,motion,critical_moment,Significant event on this trip. Review it after your shift. Flagged by: sharp maneuver.
+TRIP047,130,0.0494,0.0078,,,,True,False,0.3159,False,none,False,,835,,,,,,,,TN,3.2,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,140,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,825,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,150,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,815,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,160,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,805,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,170,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,795,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,180,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,785,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,190,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,775,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,200,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,765,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,210,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,755,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,220,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,745,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,230,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,735,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,240,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,725,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,250,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,715,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,260,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,705,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,270,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,695,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,280,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,685,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,290,0.0000,0.0000,78.4000,59.7000,very_loud,True,True,0.3712,False,none,False,,675,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,300,0.0000,0.0000,78.4000,59.7000,very_loud,True,True,0.3712,False,none,False,,665,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,310,0.0000,0.0000,78.4000,59.7000,very_loud,True,True,0.3712,False,none,False,,655,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,320,0.0000,0.0000,78.4000,59.7000,very_loud,True,True,0.3712,False,none,False,,645,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,330,0.0000,0.0000,78.4000,59.7000,very_loud,True,True,0.3712,False,none,False,,635,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,340,0.0000,0.0000,78.4000,59.7000,very_loud,True,True,0.3712,False,none,False,,625,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,350,0.0000,0.0000,72.1000,0.0000,edge_phone_notif,True,True,0.1487,False,none,False,,615,,,,,,,,TN,1.5,combined,smooth_trip,Trip running smoothly.
+TRIP047,360,0.0000,0.0000,72.1000,0.0000,edge_phone_notif,True,True,0.1487,False,none,False,,605,,,,,,,,TN,1.5,combined,smooth_trip,Trip running smoothly.
+TRIP047,370,0.0000,0.0000,72.1000,0.0000,edge_phone_notif,True,True,0.1487,False,none,False,,595,,,,,,,,TN,1.5,combined,smooth_trip,Trip running smoothly.
+TRIP047,380,0.0000,0.0000,72.1000,0.0000,edge_phone_notif,True,True,0.1487,False,none,False,,585,,,,,,,,TN,1.5,combined,smooth_trip,Trip running smoothly.
+TRIP047,390,0.0000,0.0000,72.1000,0.0000,edge_phone_notif,True,True,0.1487,False,none,False,,575,,,,,,,,TN,1.5,combined,smooth_trip,Trip running smoothly.
+TRIP047,400,0.0000,0.0000,72.1000,0.0000,edge_phone_notif,True,True,0.1487,False,none,False,,565,,,,,,,,TN,1.5,combined,smooth_trip,Trip running smoothly.
+TRIP047,410,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,555,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,420,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,545,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,430,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,535,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,440,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,525,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,450,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,515,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,460,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,505,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,470,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,495,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,480,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,485,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,490,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,475,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,500,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,465,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,510,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,455,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,520,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,445,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,530,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,435,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,540,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,425,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,550,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,415,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,560,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,405,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,570,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,395,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,580,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,385,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,590,0.0000,0.0000,50.3000,0.0000,quiet,True,True,0.3667,False,none,False,,375,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,600,0.0000,0.0000,50.3000,0.0000,quiet,True,True,0.3667,False,none,False,,365,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,610,0.0000,0.0000,50.3000,0.0000,quiet,True,True,0.3667,False,none,False,,355,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,620,0.0000,0.0000,50.3000,0.0000,quiet,True,True,0.3667,False,none,False,,345,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,630,0.0000,0.0000,50.3000,0.0000,quiet,True,True,0.3667,False,none,False,,335,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,640,0.0000,0.0000,50.3000,0.0000,quiet,True,True,0.3667,False,none,False,,325,,,,,,,,TN,3.7,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,650,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,315,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,660,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,305,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,670,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,295,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,680,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,285,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,690,0.0000,0.0000,81.4000,56.4000,argument,True,True,0.3801,False,none,False,,275,,,,,,,,TN,3.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,700,0.0000,0.0000,81.4000,56.4000,argument,True,True,0.3801,False,none,False,,265,,,,,,,,TN,3.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,710,0.0000,0.0000,81.4000,56.4000,argument,True,True,0.3801,False,none,False,,255,,,,,,,,TN,3.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,720,0.0000,0.0000,81.4000,56.4000,argument,True,True,0.3801,False,none,False,,245,,,,,,,,TN,3.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,730,0.0000,0.0000,81.4000,56.4000,argument,True,True,0.3801,False,none,False,,235,,,,,,,,TN,3.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,740,0.0000,0.0000,81.4000,56.4000,argument,True,True,0.3801,False,none,False,,225,,,,,,,,TN,3.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP047,750,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,215,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,760,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,205,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,770,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,195,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,780,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,185,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,790,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,175,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,800,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,165,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,810,0.0000,0.0000,75.6000,82.1000,very_loud,True,True,0.4522,False,low,False,,155,,,,,,,,TN,4.5,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP047,820,0.0000,0.0000,75.6000,82.1000,very_loud,True,True,0.4522,False,low,False,,145,,,,,,,,TN,4.5,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP047,830,0.0000,0.0000,75.6000,82.1000,very_loud,True,True,0.4522,False,low,False,,135,,,,,,,,TN,4.5,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP047,840,0.0000,0.0000,75.6000,82.1000,very_loud,True,True,0.4522,False,low,False,,125,,,,,,,,TN,4.5,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP047,850,0.0000,0.0000,75.6000,82.1000,very_loud,True,True,0.4522,False,low,False,,115,,,,,,,,TN,4.5,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP047,860,0.0000,0.0000,75.6000,82.1000,very_loud,True,True,0.4522,False,low,False,,105,,,,,,,,TN,4.5,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP047,870,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,95,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,880,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,85,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,890,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,75,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,900,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,65,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,910,0.0000,0.0000,,,,True,False,0.1712,False,none,True,965,55,harsh_braking,low,0.87,0.25,0.56,Event 156: motion_score=0.87 audio_score=0.25,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,920,0.0000,0.0000,,,,True,False,0.1712,False,none,True,965,45,harsh_braking,low,0.87,0.25,0.56,Event 156: motion_score=0.87 audio_score=0.25,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,930,0.0000,0.0000,,,,True,False,0.1712,False,none,True,965,35,harsh_braking,low,0.87,0.25,0.56,Event 156: motion_score=0.87 audio_score=0.25,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,940,0.0000,0.0000,,,,True,False,0.1712,False,none,True,965,25,harsh_braking,low,0.87,0.25,0.56,Event 156: motion_score=0.87 audio_score=0.25,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,950,0.0000,0.0000,,,,True,False,0.1712,False,none,True,965,15,harsh_braking,low,0.87,0.25,0.56,Event 156: motion_score=0.87 audio_score=0.25,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,960,0.0000,0.0000,,,,True,False,0.1712,False,none,True,965,5,harsh_braking,low,0.87,0.25,0.56,Event 156: motion_score=0.87 audio_score=0.25,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,970,0.0000,0.0000,,,,True,False,0.1712,False,none,True,965,5,harsh_braking,low,0.87,0.25,0.56,Event 156: motion_score=0.87 audio_score=0.25,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,980,0.0000,0.0000,,,,True,False,0.1712,False,none,True,965,15,harsh_braking,low,0.87,0.25,0.56,Event 156: motion_score=0.87 audio_score=0.25,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,990,0.0000,0.0000,,,,True,False,0.1712,False,none,True,965,25,harsh_braking,low,0.87,0.25,0.56,Event 156: motion_score=0.87 audio_score=0.25,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP047,1000,0.0000,0.0000,,,,True,False,0.1712,False,none,True,965,35,harsh_braking,low,0.87,0.25,0.56,Event 156: motion_score=0.87 audio_score=0.25,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,0,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,471,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,10,0.4164,4.7917,,,,True,False,0.9307,True,high,False,,461,,,,,,,,FP,9.3,motion,critical_moment,Significant event on this trip. Review it after your shift. Flagged by: sharp maneuver.
+TRIP048,20,0.0103,0.5850,,,,True,False,0.4114,False,low,False,,451,,,,,,,,TN,4.1,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,30,0.0460,0.6925,,,,True,False,0.4442,False,low,False,,441,,,,,,,,TN,4.4,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,40,0.1323,0.0102,,,,True,False,0.4627,False,low,False,,431,,,,,,,,TN,4.6,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,50,0.0313,0.9991,,,,True,False,0.4844,False,low,False,,421,,,,,,,,TN,4.8,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,60,0.0805,0.0142,,,,True,False,0.3789,False,none,False,,411,,,,,,,,TN,3.8,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP048,70,0.0875,0.2538,,,,True,False,0.4321,False,low,False,,401,,,,,,,,TN,4.3,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,80,0.0127,1.0909,,,,True,False,0.4876,False,low,False,,391,,,,,,,,TN,4.9,motion,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,90,0.0191,0.0144,,,,True,False,0.2618,False,none,False,,381,,,,,,,,TN,2.6,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP048,100,0.0457,3.0772,,,,True,False,0.6947,True,medium,False,,371,,,,,,,,FP,6.9,motion,notable_event,Notable moment flagged. This may affect your trip quality score. Flagged by: sharp maneuver.
+TRIP048,110,0.0266,2.0852,,,,True,False,0.6108,False,medium,False,,361,,,,,,,,TN,6.1,motion,notable_event,Notable moment flagged. This may affect your trip quality score. Flagged by: sharp maneuver.
+TRIP048,120,0.0230,0.2770,,,,True,False,0.3533,False,none,False,,351,,,,,,,,TN,3.5,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP048,130,0.0619,0.2071,,,,True,False,0.3901,False,none,False,,341,,,,,,,,TN,3.9,motion,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP048,140,0.0196,0.4585,59.4000,0.0000,normal,True,True,0.5118,False,low,False,,331,,,,,,,,TN,5.1,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,150,0.0000,0.0000,59.4000,0.0000,normal,True,True,0.2773,False,none,False,,321,,,,,,,,TN,2.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP048,160,0.0000,0.0000,59.4000,0.0000,normal,True,True,0.2773,False,none,False,,311,,,,,,,,TN,2.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP048,170,0.0000,0.0000,59.4000,0.0000,normal,True,True,0.2773,False,none,False,,301,,,,,,,,TN,2.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP048,180,0.0000,0.0000,59.4000,0.0000,normal,True,True,0.2773,False,none,False,,291,,,,,,,,TN,2.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP048,190,0.0000,0.0000,59.4000,0.0000,normal,True,True,0.2773,False,none,False,,281,,,,,,,,TN,2.8,combined,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP048,200,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,271,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,210,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,261,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,220,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,251,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,230,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,241,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,240,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,231,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,250,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,221,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,260,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,211,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,270,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,201,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,280,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,191,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,290,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,181,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,300,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,171,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,310,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,161,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,320,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,151,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,330,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,141,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,340,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,131,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,350,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,121,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,360,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,111,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,370,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,101,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,380,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,91,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,390,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,81,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,400,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,71,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,410,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,61,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,420,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,51,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,430,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,41,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,440,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,31,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,450,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,21,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,460,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,11,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,470,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,1,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,480,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,9,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,490,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,19,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,500,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,29,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,510,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,39,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,520,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,49,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,530,0.0000,0.0000,,,,True,False,0.1712,False,none,True,471,59,harsh_braking,high,0.42,0.77,0.59,Event 185: motion_score=0.42 audio_score=0.77,False,FN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,540,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,69,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,550,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,79,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,560,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,89,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,570,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,99,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,580,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,109,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,590,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,119,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,600,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,129,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,610,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,139,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,620,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,149,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,630,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,159,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,640,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,169,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,650,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,179,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,660,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,189,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,670,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,199,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,680,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,209,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,690,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,219,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,700,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,229,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,710,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,239,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,720,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,249,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,730,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,259,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,740,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,269,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,750,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,279,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,760,0.0000,0.0000,46.9000,0.0000,quiet,True,True,0.4139,False,low,False,,289,,,,,,,,TN,4.1,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,770,0.0000,0.0000,46.9000,0.0000,quiet,True,True,0.4139,False,low,False,,299,,,,,,,,TN,4.1,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,780,0.0000,0.0000,46.9000,0.0000,quiet,True,True,0.4139,False,low,False,,309,,,,,,,,TN,4.1,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,790,0.0000,0.0000,46.9000,0.0000,quiet,True,True,0.4139,False,low,False,,319,,,,,,,,TN,4.1,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,800,0.0000,0.0000,46.9000,0.0000,quiet,True,True,0.4139,False,low,False,,329,,,,,,,,TN,4.1,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,810,0.0000,0.0000,46.9000,0.0000,quiet,True,True,0.4139,False,low,False,,339,,,,,,,,TN,4.1,combined,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP048,820,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,349,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,830,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,359,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,840,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,369,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,850,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,379,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,860,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,389,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,870,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,399,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,880,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,409,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,890,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,419,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,900,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,429,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,910,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,439,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,920,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,449,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,930,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,459,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,940,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,469,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,950,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,479,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,960,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,489,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,970,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,499,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,980,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,509,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,990,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,519,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,1000,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,529,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,1010,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,539,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,1020,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,549,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,1030,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,559,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,1040,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,569,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,1055,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,584,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP048,1061,0.0000,0.0000,,,,True,False,0.1712,False,none,False,,590,,,,,,,,TN,1.7,motion,smooth_trip,Trip running smoothly.
+TRIP050,550,,,62.8000,0.0000,normal,False,True,0.2404,False,none,False,,322,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,599,,,84.9000,28.1000,edge_baby_crying,False,True,0.3357,False,none,False,,273,,,,,,,,TN,3.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,799,,,73.5000,120.0000,edge_radio_talk,False,True,0.5583,False,medium,False,,73,,,,,,,,TN,5.6,audio,notable_event,Notable moment flagged. This may affect your trip quality score. Flagged by: elevated cabin noise.
+TRIP050,836,,,45.0000,0.0000,quiet,False,True,0.4320,False,low,True,872,36,harsh_braking,low,0.46,0.73,0.59,Event 125: motion_score=0.46 audio_score=0.73,True,FN,4.3,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,979,,,65.5000,0.0000,conversation,False,True,0.2010,False,none,False,,107,,,,,,,,TN,2.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,1022,,,51.2000,0.0000,quiet,False,True,0.3619,False,none,False,,150,,,,,,,,TN,3.6,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,1059,,,45.0000,0.0000,quiet,False,True,0.4320,False,low,False,,187,,,,,,,,TN,4.3,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,1694,,,85.8000,22.3000,edge_laughter,False,True,0.3288,False,none,False,,822,,,,,,,,TN,3.3,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,2108,,,81.9000,39.7000,very_loud,False,True,0.3310,False,none,False,,1236,,,,,,,,TN,3.3,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,2143,,,47.3000,0.0000,quiet,False,True,0.4122,False,low,False,,1271,,,,,,,,TN,4.1,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,2307,,,51.6000,0.0000,quiet,False,True,0.3496,False,none,False,,1435,,,,,,,,TN,3.5,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,2322,,,75.3000,80.7000,very_loud,False,True,0.4481,False,low,False,,1450,,,,,,,,TN,4.5,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,2612,,,48.1000,0.0000,quiet,False,True,0.4095,False,low,False,,1740,,,,,,,,TN,4.1,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,2726,,,81.6000,77.6000,very_loud,False,True,0.4275,False,low,False,,1854,,,,,,,,TN,4.3,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,2853,,,72.0000,0.0000,conversation,False,True,0.1487,False,none,False,,1981,,,,,,,,TN,1.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,3476,,,58.7000,0.0000,normal,False,True,0.2889,False,none,False,,2604,,,,,,,,TN,2.9,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,3574,,,71.7000,135.5000,very_loud,False,True,0.5904,False,medium,False,,2702,,,,,,,,TN,5.9,audio,notable_event,Notable moment flagged. This may affect your trip quality score. Flagged by: elevated cabin noise.
+TRIP050,3589,,,63.2000,0.0000,normal,False,True,0.2408,False,none,False,,2717,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,3706,,,73.1000,0.0000,conversation,False,True,0.1274,False,none,False,,2834,,,,,,,,TN,1.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,3900,,,79.0000,79.4000,edge_wind_noise,False,True,0.3968,False,none,False,,3028,,,,,,,,TN,4.0,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,3956,,,70.9000,0.0000,conversation,False,True,0.1633,False,none,False,,3084,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,4160,,,71.0000,53.9000,edge_radio_talk,False,True,0.4541,False,low,False,,3288,,,,,,,,TN,4.5,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,4263,,,69.1000,0.0000,conversation,False,True,0.1674,False,none,False,,3391,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,4268,,,67.7000,0.0000,conversation,False,True,0.1949,False,none,False,,3396,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,4339,,,83.2000,0.0000,loud,False,True,0.0838,False,none,False,,3467,,,,,,,,TN,0.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,4987,,,47.4000,0.0000,quiet,False,True,0.4126,False,low,False,,4115,,,,,,,,TN,4.1,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,5012,,,45.2000,0.0000,quiet,False,True,0.4678,False,low,False,,4140,,,,,,,,TN,4.7,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,5016,,,45.0000,0.0000,quiet,False,True,0.4320,False,low,False,,4144,,,,,,,,TN,4.3,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,5407,,,46.1000,0.0000,quiet,False,True,0.4334,False,low,False,,4535,,,,,,,,TN,4.3,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,5707,,,45.0000,0.0000,quiet,False,True,0.4320,False,low,False,,4835,,,,,,,,TN,4.3,audio,elevated_stress,Stress signal detected. Take a breath — you're doing fine.
+TRIP050,5897,,,62.5000,0.0000,conversation,False,True,0.2402,False,none,False,,5025,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,5912,,,63.7000,0.0000,conversation,False,True,0.2416,False,none,False,,5040,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,5914,,,51.3000,0.0000,quiet,False,True,0.3587,False,none,False,,5042,,,,,,,,TN,3.6,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,6424,,,64.1000,0.0000,conversation,False,True,0.2410,False,none,False,,5552,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,6899,,,68.9000,0.0000,conversation,False,True,0.1667,False,none,False,,6027,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,7010,,,68.2000,0.0000,conversation,False,True,0.1859,False,none,False,,6138,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,7258,,,70.0000,0.0000,conversation,False,True,0.1712,False,none,False,,6386,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,7406,,,71.2000,0.0000,conversation,False,True,0.1628,False,none,False,,6534,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,7530,,,69.9000,0.0000,conversation,False,True,0.1712,False,none,False,,6658,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,7781,,,69.5000,0.0000,conversation,False,True,0.1698,False,none,False,,6909,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,7912,,,69.3000,0.0000,conversation,False,True,0.1702,False,none,False,,7040,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,8161,,,68.9000,0.0000,conversation,False,True,0.1667,False,none,False,,7289,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,8300,,,67.7000,0.0000,conversation,False,True,0.1949,False,none,False,,7428,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,8362,,,68.0000,0.0000,conversation,False,True,0.1884,False,none,False,,7490,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,8487,,,67.5000,0.0000,conversation,False,True,0.1979,False,none,False,,7615,,,,,,,,TN,2.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,8617,,,67.3000,0.0000,conversation,False,True,0.1998,False,none,False,,7745,,,,,,,,TN,2.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,8781,,,68.0000,0.0000,conversation,False,True,0.1884,False,none,False,,7909,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,9061,,,68.1000,0.0000,conversation,False,True,0.1883,False,none,False,,8189,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,9251,,,68.5000,0.0000,conversation,False,True,0.1812,False,none,False,,8379,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,9481,,,68.8000,0.0000,conversation,False,True,0.1724,False,none,False,,8609,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,9689,,,68.2000,0.0000,conversation,False,True,0.1859,False,none,False,,8817,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,9953,,,68.7000,0.0000,conversation,False,True,0.1770,False,none,False,,9081,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,10135,,,70.4000,0.0000,conversation,False,True,0.1698,False,none,False,,9263,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,10208,,,71.1000,0.0000,conversation,False,True,0.1657,False,none,False,,9336,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,10398,,,69.6000,0.0000,conversation,False,True,0.1749,False,none,False,,9526,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,10584,,,68.1000,0.0000,conversation,False,True,0.1883,False,none,False,,9712,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,10805,,,68.9000,0.0000,conversation,False,True,0.1667,False,none,False,,9933,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,11096,,,68.5000,0.0000,conversation,False,True,0.1812,False,none,False,,10224,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,11196,,,68.8000,0.0000,conversation,False,True,0.1724,False,none,False,,10324,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,11442,,,67.5000,0.0000,conversation,False,True,0.1979,False,none,False,,10570,,,,,,,,TN,2.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,11560,,,67.7000,0.0000,conversation,False,True,0.1949,False,none,False,,10688,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,11840,,,66.9000,0.0000,conversation,False,True,0.2048,False,none,False,,10968,,,,,,,,TN,2.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,11965,,,66.2000,0.0000,conversation,False,True,0.2045,False,none,False,,11093,,,,,,,,TN,2.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,12225,,,66.7000,0.0000,conversation,False,True,0.2051,False,none,False,,11353,,,,,,,,TN,2.1,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,12438,,,68.5000,0.0000,conversation,False,True,0.1812,False,none,False,,11566,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,12716,,,67.0000,0.0000,conversation,False,True,0.2022,False,none,False,,11844,,,,,,,,TN,2.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,12942,,,68.9000,0.0000,conversation,False,True,0.1667,False,none,False,,12070,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,13230,,,69.5000,0.0000,conversation,False,True,0.1698,False,none,False,,12358,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,13469,,,70.2000,0.0000,conversation,False,True,0.1733,False,none,False,,12597,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,13711,,,71.0000,0.0000,conversation,False,True,0.1657,False,none,False,,12839,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,13968,,,71.0000,0.0000,conversation,False,True,0.1657,False,none,False,,13096,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,14040,,,71.3000,0.0000,conversation,False,True,0.1597,False,none,False,,13168,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,14182,,,70.5000,0.0000,conversation,False,True,0.1684,False,none,False,,13310,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,14352,,,69.4000,0.0000,conversation,False,True,0.1687,False,none,False,,13480,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,14529,,,68.1000,0.0000,conversation,False,True,0.1883,False,none,False,,13657,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,14793,,,68.4000,0.0000,conversation,False,True,0.1843,False,none,False,,13921,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,15076,,,68.6000,0.0000,conversation,False,True,0.1774,False,none,False,,14204,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,15163,,,68.9000,0.0000,conversation,False,True,0.1667,False,none,False,,14291,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,15330,,,70.0000,0.0000,conversation,False,True,0.1712,False,none,False,,14458,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,15547,,,70.2000,0.0000,conversation,False,True,0.1733,False,none,False,,14675,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,15598,,,71.2000,0.0000,conversation,False,True,0.1628,False,none,False,,14726,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,15853,,,71.4000,0.0000,conversation,False,True,0.1597,False,none,False,,14981,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,16100,,,69.8000,0.0000,conversation,False,True,0.1716,False,none,False,,15228,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,16256,,,69.0000,0.0000,conversation,False,True,0.1674,False,none,False,,15384,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,16302,,,68.8000,0.0000,conversation,False,True,0.1724,False,none,False,,15430,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,16510,,,70.2000,0.0000,conversation,False,True,0.1733,False,none,False,,15638,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,16584,,,70.0000,0.0000,conversation,False,True,0.1712,False,none,False,,15712,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,16674,,,71.1000,0.0000,conversation,False,True,0.1657,False,none,False,,15802,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,16825,,,69.9000,0.0000,conversation,False,True,0.1712,False,none,False,,15953,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,17034,,,71.3000,0.0000,conversation,False,True,0.1597,False,none,False,,16162,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,17283,,,70.0000,0.0000,conversation,False,True,0.1712,False,none,False,,16411,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,17384,,,71.1000,0.0000,conversation,False,True,0.1657,False,none,False,,16512,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,17519,,,72.3000,0.0000,conversation,False,True,0.1487,False,none,False,,16647,,,,,,,,TN,1.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,17728,,,72.4000,0.0000,conversation,False,True,0.1442,False,none,False,,16856,,,,,,,,TN,1.4,audio,smooth_trip,Trip running smoothly.
+TRIP050,17844,,,71.7000,0.0000,conversation,False,True,0.1544,False,none,False,,16972,,,,,,,,TN,1.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,18023,,,70.9000,0.0000,conversation,False,True,0.1633,False,none,False,,17151,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,18189,,,72.7000,0.0000,conversation,False,True,0.1325,False,none,False,,17317,,,,,,,,TN,1.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,18482,,,74.6000,0.0000,conversation,False,True,0.0937,False,none,False,,17610,,,,,,,,TN,0.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,18560,,,73.1000,0.0000,conversation,False,True,0.1274,False,none,False,,17688,,,,,,,,TN,1.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,18800,,,74.8000,0.0000,conversation,False,True,0.0882,False,none,False,,17928,,,,,,,,TN,0.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,18971,,,76.3000,0.0000,conversation,False,True,0.0532,False,none,False,,18099,,,,,,,,TN,0.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,19065,,,77.1000,0.0000,conversation,False,True,0.0343,False,none,False,,18193,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,19162,,,76.1000,0.0000,conversation,False,True,0.0579,False,none,False,,18290,,,,,,,,TN,0.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,19356,,,77.4000,0.0000,conversation,False,True,0.0270,False,none,False,,18484,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,19587,,,77.4000,0.0000,conversation,False,True,0.0270,False,none,False,,18715,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,19754,,,77.9000,0.0000,conversation,False,True,0.0226,False,none,False,,18882,,,,,,,,TN,0.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,19976,,,77.7000,0.0000,conversation,False,True,0.0285,False,none,False,,19104,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,20053,,,77.3000,0.0000,conversation,False,True,0.0296,False,none,False,,19181,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,20225,,,78.1000,0.0000,conversation,False,True,0.0205,False,none,False,,19353,,,,,,,,TN,0.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,20443,,,77.9000,0.0000,conversation,False,True,0.0226,False,none,False,,19571,,,,,,,,TN,0.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,20722,,,77.2000,0.0000,conversation,False,True,0.0324,False,none,False,,19850,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,20753,,,78.7000,0.0000,conversation,False,True,0.0000,False,none,False,,19881,,,,,,,,TN,0.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,20830,,,79.6000,0.0000,conversation,False,True,0.0213,False,none,False,,19958,,,,,,,,TN,0.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,21094,,,80.1000,0.0000,conversation,False,True,0.0278,False,none,False,,20222,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,21307,,,81.5000,0.0000,conversation,False,True,0.0583,False,none,False,,20435,,,,,,,,TN,0.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,21540,,,80.4000,0.0000,conversation,False,True,0.0333,False,none,False,,20668,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,21789,,,81.7000,0.0000,conversation,False,True,0.0602,False,none,False,,20917,,,,,,,,TN,0.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,22072,,,80.8000,0.0000,conversation,False,True,0.0406,False,none,False,,21200,,,,,,,,TN,0.4,audio,smooth_trip,Trip running smoothly.
+TRIP050,22247,,,80.2000,0.0000,conversation,False,True,0.0302,False,none,False,,21375,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,22343,,,80.5000,0.0000,conversation,False,True,0.0346,False,none,False,,21471,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,22621,,,81.7000,0.0000,conversation,False,True,0.0602,False,none,False,,21749,,,,,,,,TN,0.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,22675,,,79.9000,0.0000,conversation,False,True,0.0228,False,none,False,,21803,,,,,,,,TN,0.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,22940,,,78.0000,0.0000,conversation,False,True,0.0226,False,none,False,,22068,,,,,,,,TN,0.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,23050,,,77.8000,0.0000,conversation,False,True,0.0261,False,none,False,,22178,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,23080,,,79.8000,0.0000,conversation,False,True,0.0228,False,none,False,,22208,,,,,,,,TN,0.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,23329,,,78.6000,0.0000,conversation,False,True,0.0000,False,none,False,,22457,,,,,,,,TN,0.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,23426,,,80.1000,0.0000,conversation,False,True,0.0278,False,none,False,,22554,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,23610,,,78.7000,0.0000,conversation,False,True,0.0000,False,none,False,,22738,,,,,,,,TN,0.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,23780,,,77.1000,0.0000,conversation,False,True,0.0343,False,none,False,,22908,,,,,,,,TN,0.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,23994,,,76.1000,0.0000,conversation,False,True,0.0579,False,none,False,,23122,,,,,,,,TN,0.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,24214,,,76.8000,0.0000,conversation,False,True,0.0426,False,none,False,,23342,,,,,,,,TN,0.4,audio,smooth_trip,Trip running smoothly.
+TRIP050,24328,,,75.0000,0.0000,conversation,False,True,0.0853,False,none,False,,23456,,,,,,,,TN,0.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,24514,,,75.9000,0.0000,conversation,False,True,0.0601,False,none,False,,23642,,,,,,,,TN,0.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,24663,,,75.6000,0.0000,conversation,False,True,0.0771,False,none,False,,23791,,,,,,,,TN,0.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,24739,,,76.4000,0.0000,conversation,False,True,0.0491,False,none,False,,23867,,,,,,,,TN,0.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,24769,,,75.3000,0.0000,conversation,False,True,0.0853,False,none,False,,23897,,,,,,,,TN,0.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,24838,,,73.8000,0.0000,conversation,False,True,0.1165,False,none,False,,23966,,,,,,,,TN,1.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,24983,,,73.9000,0.0000,conversation,False,True,0.1150,False,none,False,,24111,,,,,,,,TN,1.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,25240,,,71.9000,0.0000,conversation,False,True,0.1505,False,none,False,,24368,,,,,,,,TN,1.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,25445,,,73.2000,0.0000,conversation,False,True,0.1274,False,none,False,,24573,,,,,,,,TN,1.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,25691,,,74.0000,0.0000,conversation,False,True,0.1153,False,none,False,,24819,,,,,,,,TN,1.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,25965,,,72.3000,0.0000,conversation,False,True,0.1487,False,none,False,,25093,,,,,,,,TN,1.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,26191,,,70.7000,0.0000,conversation,False,True,0.1695,False,none,False,,25319,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,26273,,,69.1000,0.0000,conversation,False,True,0.1674,False,none,False,,25401,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,26491,,,70.6000,0.0000,conversation,False,True,0.1702,False,none,False,,25619,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,26591,,,70.1000,0.0000,conversation,False,True,0.1712,False,none,False,,25719,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,26689,,,70.7000,0.0000,conversation,False,True,0.1695,False,none,False,,25817,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,26792,,,69.0000,0.0000,conversation,False,True,0.1674,False,none,False,,25920,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,26826,,,69.4000,0.0000,conversation,False,True,0.1687,False,none,False,,25954,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,26940,,,69.2000,0.0000,conversation,False,True,0.1685,False,none,False,,26068,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,27079,,,69.7000,0.0000,conversation,False,True,0.1756,False,none,False,,26207,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,27186,,,71.4000,0.0000,conversation,False,True,0.1597,False,none,False,,26314,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,27442,,,72.8000,0.0000,conversation,False,True,0.1325,False,none,False,,26570,,,,,,,,TN,1.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,27516,,,74.4000,0.0000,conversation,False,True,0.0974,False,none,False,,26644,,,,,,,,TN,1.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,27617,,,75.4000,0.0000,conversation,False,True,0.0823,False,none,False,,26745,,,,,,,,TN,0.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,27843,,,74.8000,0.0000,conversation,False,True,0.0882,False,none,False,,26971,,,,,,,,TN,0.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,28092,,,74.1000,0.0000,conversation,False,True,0.1099,False,none,False,,27220,,,,,,,,TN,1.1,audio,smooth_trip,Trip running smoothly.
+TRIP050,28193,,,73.1000,0.0000,conversation,False,True,0.1274,False,none,False,,27321,,,,,,,,TN,1.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,28266,,,72.1000,0.0000,conversation,False,True,0.1487,False,none,False,,27394,,,,,,,,TN,1.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,28441,,,73.2000,0.0000,conversation,False,True,0.1274,False,none,False,,27569,,,,,,,,TN,1.3,audio,smooth_trip,Trip running smoothly.
+TRIP050,28484,,,74.6000,0.0000,conversation,False,True,0.0937,False,none,False,,27612,,,,,,,,TN,0.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,28668,,,73.4000,0.0000,conversation,False,True,0.1239,False,none,False,,27796,,,,,,,,TN,1.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,28958,,,72.2000,0.0000,conversation,False,True,0.1487,False,none,False,,28086,,,,,,,,TN,1.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,29188,,,71.4000,0.0000,conversation,False,True,0.1597,False,none,False,,28316,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,29245,,,72.5000,0.0000,conversation,False,True,0.1442,False,none,False,,28373,,,,,,,,TN,1.4,audio,smooth_trip,Trip running smoothly.
+TRIP050,29397,,,72.5000,0.0000,conversation,False,True,0.1442,False,none,False,,28525,,,,,,,,TN,1.4,audio,smooth_trip,Trip running smoothly.
+TRIP050,29484,,,71.5000,0.0000,conversation,False,True,0.1572,False,none,False,,28612,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,29550,,,71.6000,0.0000,conversation,False,True,0.1541,False,none,False,,28678,,,,,,,,TN,1.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,29586,,,73.5000,0.0000,conversation,False,True,0.1185,False,none,False,,28714,,,,,,,,TN,1.2,audio,smooth_trip,Trip running smoothly.
+TRIP050,29778,,,72.0000,0.0000,conversation,False,True,0.1487,False,none,False,,28906,,,,,,,,TN,1.5,audio,smooth_trip,Trip running smoothly.
+TRIP050,30023,,,71.5000,0.0000,conversation,False,True,0.1572,False,none,False,,29151,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,30141,,,72.6000,0.0000,conversation,False,True,0.1419,False,none,False,,29269,,,,,,,,TN,1.4,audio,smooth_trip,Trip running smoothly.
+TRIP050,30208,,,70.7000,0.0000,conversation,False,True,0.1695,False,none,False,,29336,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,30272,,,68.8000,0.0000,conversation,False,True,0.1724,False,none,False,,29400,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,30412,,,67.0000,0.0000,conversation,False,True,0.2022,False,none,False,,29540,,,,,,,,TN,2.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,30472,,,68.8000,0.0000,conversation,False,True,0.1724,False,none,False,,29600,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,30705,,,68.8000,0.0000,conversation,False,True,0.1724,False,none,False,,29833,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,30991,,,69.9000,0.0000,conversation,False,True,0.1712,False,none,False,,30119,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,31237,,,70.7000,0.0000,conversation,False,True,0.1695,False,none,False,,30365,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,31309,,,71.3000,0.0000,conversation,False,True,0.1597,False,none,False,,30437,,,,,,,,TN,1.6,audio,smooth_trip,Trip running smoothly.
+TRIP050,31417,,,70.4000,0.0000,conversation,False,True,0.1698,False,none,False,,30545,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,31605,,,68.7000,0.0000,conversation,False,True,0.1770,False,none,False,,30733,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,31739,,,70.6000,0.0000,conversation,False,True,0.1702,False,none,False,,30867,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,31848,,,70.7000,0.0000,conversation,False,True,0.1695,False,none,False,,30976,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,32078,,,71.0000,0.0000,conversation,False,True,0.1657,False,none,False,,31206,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,32141,,,70.2000,0.0000,conversation,False,True,0.1733,False,none,False,,31269,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,32394,,,71.1000,0.0000,conversation,False,True,0.1657,False,none,False,,31522,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,32546,,,69.3000,0.0000,conversation,False,True,0.1702,False,none,False,,31674,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,32620,,,71.0000,0.0000,conversation,False,True,0.1657,False,none,False,,31748,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,32709,,,70.8000,0.0000,conversation,False,True,0.1695,False,none,False,,31837,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,32767,,,70.0000,0.0000,conversation,False,True,0.1712,False,none,False,,31895,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,32886,,,68.5000,0.0000,conversation,False,True,0.1812,False,none,False,,32014,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,32986,,,69.3000,0.0000,conversation,False,True,0.1702,False,none,False,,32114,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,33099,,,69.3000,0.0000,conversation,False,True,0.1702,False,none,False,,32227,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,33306,,,69.4000,0.0000,conversation,False,True,0.1687,False,none,False,,32434,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,33468,,,68.1000,0.0000,conversation,False,True,0.1883,False,none,False,,32596,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,33562,,,69.1000,0.0000,conversation,False,True,0.1674,False,none,False,,32690,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,33729,,,70.0000,0.0000,conversation,False,True,0.1712,False,none,False,,32857,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,33819,,,71.1000,0.0000,conversation,False,True,0.1657,False,none,False,,32947,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,33864,,,70.4000,0.0000,conversation,False,True,0.1698,False,none,False,,32992,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,34113,,,69.5000,0.0000,conversation,False,True,0.1698,False,none,False,,33241,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,34175,,,68.6000,0.0000,conversation,False,True,0.1774,False,none,False,,33303,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,34244,,,68.6000,0.0000,conversation,False,True,0.1774,False,none,False,,33372,,,,,,,,TN,1.8,audio,smooth_trip,Trip running smoothly.
+TRIP050,34535,,,68.0000,0.0000,conversation,False,True,0.1884,False,none,False,,33663,,,,,,,,TN,1.9,audio,smooth_trip,Trip running smoothly.
+TRIP050,34820,,,69.4000,0.0000,conversation,False,True,0.1687,False,none,False,,33948,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,34935,,,68.9000,0.0000,conversation,False,True,0.1667,False,none,False,,34063,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,35095,,,70.0000,0.0000,conversation,False,True,0.1712,False,none,False,,34223,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,35184,,,68.9000,0.0000,conversation,False,True,0.1667,False,none,False,,34312,,,,,,,,TN,1.7,audio,smooth_trip,Trip running smoothly.
+TRIP050,35474,,,66.9000,0.0000,conversation,False,True,0.2048,False,none,False,,34602,,,,,,,,TN,2.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,35510,,,65.9000,0.0000,conversation,False,True,0.2017,False,none,False,,34638,,,,,,,,TN,2.0,audio,smooth_trip,Trip running smoothly.
+TRIP050,35781,,,65.4000,0.0000,conversation,False,True,0.2078,False,none,False,,34909,,,,,,,,TN,2.1,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,35887,,,64.1000,0.0000,conversation,False,True,0.2410,False,none,False,,35015,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,35935,,,64.3000,0.0000,conversation,False,True,0.2361,False,none,False,,35063,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,36179,,,63.2000,0.0000,conversation,False,True,0.2408,False,none,False,,35307,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,36336,,,62.9000,0.0000,conversation,False,True,0.2404,False,none,False,,35464,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,36529,,,62.0000,0.0000,conversation,False,True,0.2404,False,none,False,,35657,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,36598,,,62.3000,0.0000,conversation,False,True,0.2403,False,none,False,,35726,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,36689,,,62.3000,0.0000,conversation,False,True,0.2403,False,none,False,,35817,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,36745,,,61.0000,0.0000,conversation,False,True,0.2495,False,none,False,,35873,,,,,,,,TN,2.5,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,37039,,,62.9000,0.0000,conversation,False,True,0.2404,False,none,False,,36167,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,37274,,,61.2000,0.0000,conversation,False,True,0.2478,False,none,False,,36402,,,,,,,,TN,2.5,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,37542,,,62.7000,0.0000,conversation,False,True,0.2402,False,none,False,,36670,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,37731,,,62.0000,0.0000,conversation,False,True,0.2404,False,none,False,,36859,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,37994,,,60.0000,0.0000,conversation,False,True,0.2711,False,none,False,,37122,,,,,,,,TN,2.7,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,38126,,,59.2000,0.0000,conversation,False,True,0.2773,False,none,False,,37254,,,,,,,,TN,2.8,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,38311,,,60.2000,0.0000,conversation,False,True,0.2711,False,none,False,,37439,,,,,,,,TN,2.7,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,38465,,,60.1000,0.0000,conversation,False,True,0.2715,False,none,False,,37593,,,,,,,,TN,2.7,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,38747,,,62.1000,0.0000,conversation,False,True,0.2388,False,none,False,,37875,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,38877,,,63.0000,0.0000,conversation,False,True,0.2404,False,none,False,,38005,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,39032,,,61.6000,0.0000,conversation,False,True,0.2445,False,none,False,,38160,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,39271,,,59.7000,0.0000,conversation,False,True,0.2761,False,none,False,,38399,,,,,,,,TN,2.8,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,39478,,,60.2000,0.0000,conversation,False,True,0.2711,False,none,False,,38606,,,,,,,,TN,2.7,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,39512,,,62.0000,0.0000,conversation,False,True,0.2404,False,none,False,,38640,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,39542,,,63.0000,0.0000,conversation,False,True,0.2404,False,none,False,,38670,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,39764,,,64.4000,0.0000,conversation,False,True,0.2321,False,none,False,,38892,,,,,,,,TN,2.3,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,39951,,,62.8000,0.0000,conversation,False,True,0.2404,False,none,False,,39079,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,40102,,,62.5000,0.0000,conversation,False,True,0.2402,False,none,False,,39230,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,40162,,,64.4000,0.0000,conversation,False,True,0.2321,False,none,False,,39290,,,,,,,,TN,2.3,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,40264,,,65.2000,0.0000,conversation,False,True,0.2062,False,none,False,,39392,,,,,,,,TN,2.1,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,40341,,,63.4000,0.0000,conversation,False,True,0.2399,False,none,False,,39469,,,,,,,,TN,2.4,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,40489,,,65.0000,0.0000,conversation,False,True,0.2166,False,none,False,,39617,,,,,,,,TN,2.2,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,40785,,,64.7000,0.0000,conversation,False,True,0.2211,False,none,False,,39913,,,,,,,,TN,2.2,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
+TRIP050,41005,,,64.5000,0.0000,conversation,False,True,0.2262,False,none,False,,40133,,,,,,,,TN,2.3,audio,mild_signal,Minor disturbance picked up — nothing to worry about yet.
