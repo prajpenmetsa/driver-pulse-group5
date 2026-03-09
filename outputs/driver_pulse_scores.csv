@@ -1,0 +1,221 @@
+trip_id,driver_id,motion_deduction,audio_deduction,earnings_adj,forecast_status,pulse_score,status,motion_events,audio_events
+TRIP001,DRV107,0,-6,+5,ahead,99,Excellent,none,"2 audio event(s): argument (−4), very_loud (−2)"
+TRIP002,DRV188,0,-5,0,on_track,95,Excellent,none,"2 audio event(s): argument (−4), loud (−1)"
+TRIP003,DRV003,0,-7,0,on_track,93,Excellent,none,"3 audio event(s): very_loud (−2), argument (−4), loud (−1)"
+TRIP004,DRV210,0,-8,+5,ahead,97,Excellent,none,"2 audio event(s): argument (−4), argument (−4)"
+TRIP005,DRV206,0,-8,+5,ahead,97,Excellent,none,"3 audio event(s): very_loud (−2), very_loud (−2), argument (−4)"
+TRIP006,DRV077,0,-9,+5,ahead,96,Excellent,none,"3 audio event(s): argument (−4), loud (−1), argument (−4)"
+TRIP007,DRV095,0,-8,+5,ahead,97,Excellent,none,"3 audio event(s): very_loud (−2), very_loud (−2), argument (−4)"
+TRIP008,DRV050,0,-12,+5,ahead,93,Excellent,none,"3 audio event(s): argument (−4), argument (−4), argument (−4)"
+TRIP009,DRV070,0,-8,-5,at_risk,87,Good,none,"3 audio event(s): very_loud (−2), very_loud (−2), argument (−4)"
+TRIP010,DRV145,0,-12,+5,ahead,93,Excellent,none,"3 audio event(s): argument (−4), argument (−4), argument (−4)"
+TRIP011,DRV112,0,-5,0,on_track,95,Excellent,none,"2 audio event(s): argument (−4), loud (−1)"
+TRIP012,DRV042,0,-10,+5,ahead,95,Excellent,none,"3 audio event(s): argument (−4), very_loud (−2), argument (−4)"
+TRIP013,DRV096,0,-9,+5,ahead,96,Excellent,none,"4 audio event(s): argument (−4), very_loud (−2), very_loud (−2), loud (−1)"
+TRIP014,DRV032,0,-1,-5,at_risk,94,Excellent,none,1 audio event(s): loud (−1)
+TRIP015,DRV111,0,-12,0,on_track,88,Good,none,"5 audio event(s): very_loud (−2), very_loud (−2), very_loud (−2), argument (−4), very_loud (−2)"
+TRIP016,DRV067,0,-4,+5,ahead,100,Excellent,none,1 audio event(s): argument (−4)
+TRIP017,DRV144,0,-8,-5,at_risk,87,Good,none,"2 audio event(s): argument (−4), argument (−4)"
+TRIP018,DRV161,0,-5,+5,ahead,100,Excellent,none,"2 audio event(s): argument (−4), loud (−1)"
+TRIP019,DRV045,0,-4,+5,ahead,100,Excellent,none,1 audio event(s): argument (−4)
+TRIP020,DRV157,0,-4,+5,ahead,100,Excellent,none,1 audio event(s): argument (−4)
+TRIP021,DRV142,0,-5,+5,ahead,100,Excellent,none,"3 audio event(s): very_loud (−2), loud (−1), very_loud (−2)"
+TRIP022,DRV048,0,-6,0,on_track,94,Excellent,none,"2 audio event(s): very_loud (−2), argument (−4)"
+TRIP023,DRV091,0,-10,-5,at_risk,85,Good,none,"3 audio event(s): argument (−4), argument (−4), very_loud (−2)"
+TRIP024,DRV189,0,-1,+5,ahead,100,Excellent,none,1 audio event(s): loud (−1)
+TRIP025,DRV188,0,-6,0,on_track,94,Excellent,none,"2 audio event(s): very_loud (−2), argument (−4)"
+TRIP026,DRV024,0,-11,+5,ahead,94,Excellent,none,"6 audio event(s): loud (−1), argument (−4), loud (−1), very_loud (−2), very_loud (−2), loud (−1)"
+TRIP027,DRV136,0,-4,+5,ahead,100,Excellent,none,"2 audio event(s): very_loud (−2), very_loud (−2)"
+TRIP028,DRV189,0,-8,+5,ahead,97,Excellent,none,"2 audio event(s): argument (−4), argument (−4)"
+TRIP029,DRV106,0,-1,0,on_track,99,Excellent,none,1 audio event(s): loud (−1)
+TRIP030,DRV150,0,-4,0,on_track,96,Excellent,none,1 audio event(s): argument (−4)
+TRIP031,DRV130,0,0,+5,ahead,100,Excellent,none,none
+TRIP032,DRV043,0,0,0,on_track,100,Excellent,none,none
+TRIP033,DRV038,0,0,0,on_track,100,Excellent,none,none
+TRIP034,DRV053,0,0,+5,ahead,100,Excellent,none,none
+TRIP035,DRV185,0,0,0,on_track,100,Excellent,none,none
+TRIP036,DRV020,0,0,+5,ahead,100,Excellent,none,none
+TRIP037,DRV049,0,0,+5,ahead,100,Excellent,none,none
+TRIP038,DRV088,0,0,+5,ahead,100,Excellent,none,none
+TRIP039,DRV083,0,0,0,on_track,100,Excellent,none,none
+TRIP040,DRV007,0,0,+5,ahead,100,Excellent,none,none
+TRIP041,DRV118,0,0,+5,ahead,100,Excellent,none,none
+TRIP042,DRV087,0,0,0,on_track,100,Excellent,none,none
+TRIP043,DRV007,0,0,+5,ahead,100,Excellent,none,none
+TRIP044,DRV131,0,0,0,on_track,100,Excellent,none,none
+TRIP045,DRV177,0,0,0,on_track,100,Excellent,none,none
+TRIP046,DRV191,0,0,+5,ahead,100,Excellent,none,none
+TRIP047,DRV107,0,0,+5,ahead,100,Excellent,none,none
+TRIP048,DRV001,0,0,+5,ahead,100,Excellent,none,none
+TRIP049,DRV002,0,0,0,on_track,100,Excellent,none,none
+TRIP050,DRV170,0,0,+5,ahead,100,Excellent,none,none
+TRIP051,DRV042,0,0,+5,ahead,100,Excellent,none,none
+TRIP052,DRV198,0,0,0,on_track,100,Excellent,none,none
+TRIP053,DRV149,0,0,+5,ahead,100,Excellent,none,none
+TRIP054,DRV046,0,0,0,on_track,100,Excellent,none,none
+TRIP055,DRV074,0,0,0,on_track,100,Excellent,none,none
+TRIP056,DRV026,0,0,-5,at_risk,95,Excellent,none,none
+TRIP057,DRV168,0,0,0,on_track,100,Excellent,none,none
+TRIP058,DRV107,0,0,+5,ahead,100,Excellent,none,none
+TRIP059,DRV028,0,0,+5,ahead,100,Excellent,none,none
+TRIP060,DRV175,0,0,+5,ahead,100,Excellent,none,none
+TRIP061,DRV148,0,0,+5,ahead,100,Excellent,none,none
+TRIP062,DRV047,0,0,-5,at_risk,95,Excellent,none,none
+TRIP063,DRV189,0,0,+5,ahead,100,Excellent,none,none
+TRIP064,DRV097,0,0,0,on_track,100,Excellent,none,none
+TRIP065,DRV060,0,0,+5,ahead,100,Excellent,none,none
+TRIP066,DRV135,0,0,+5,ahead,100,Excellent,none,none
+TRIP067,DRV153,0,0,+5,ahead,100,Excellent,none,none
+TRIP068,DRV182,0,0,+5,ahead,100,Excellent,none,none
+TRIP069,DRV085,0,0,-5,at_risk,95,Excellent,none,none
+TRIP070,DRV207,0,0,+5,ahead,100,Excellent,none,none
+TRIP071,DRV011,0,0,+5,ahead,100,Excellent,none,none
+TRIP072,DRV060,0,0,+5,ahead,100,Excellent,none,none
+TRIP073,DRV031,0,0,-5,at_risk,95,Excellent,none,none
+TRIP074,DRV128,0,0,+5,ahead,100,Excellent,none,none
+TRIP075,DRV056,0,0,-5,at_risk,95,Excellent,none,none
+TRIP076,DRV189,0,0,+5,ahead,100,Excellent,none,none
+TRIP077,DRV206,0,0,+5,ahead,100,Excellent,none,none
+TRIP078,DRV194,0,0,0,on_track,100,Excellent,none,none
+TRIP079,DRV143,0,0,0,on_track,100,Excellent,none,none
+TRIP080,DRV172,0,0,0,on_track,100,Excellent,none,none
+TRIP081,DRV048,0,0,0,on_track,100,Excellent,none,none
+TRIP082,DRV066,0,0,0,on_track,100,Excellent,none,none
+TRIP083,DRV151,0,0,+5,ahead,100,Excellent,none,none
+TRIP084,DRV112,0,0,0,on_track,100,Excellent,none,none
+TRIP085,DRV133,0,0,+5,ahead,100,Excellent,none,none
+TRIP086,DRV034,0,0,0,on_track,100,Excellent,none,none
+TRIP087,DRV011,0,0,+5,ahead,100,Excellent,none,none
+TRIP088,DRV043,0,0,0,on_track,100,Excellent,none,none
+TRIP089,DRV078,0,0,+5,ahead,100,Excellent,none,none
+TRIP090,DRV003,0,0,0,on_track,100,Excellent,none,none
+TRIP091,DRV039,0,0,+5,ahead,100,Excellent,none,none
+TRIP092,DRV059,0,0,0,on_track,100,Excellent,none,none
+TRIP093,DRV090,0,0,+5,ahead,100,Excellent,none,none
+TRIP094,DRV139,0,0,+5,ahead,100,Excellent,none,none
+TRIP095,DRV088,0,0,+5,ahead,100,Excellent,none,none
+TRIP096,DRV041,0,0,+5,ahead,100,Excellent,none,none
+TRIP097,DRV099,0,0,+5,ahead,100,Excellent,none,none
+TRIP098,DRV083,0,0,0,on_track,100,Excellent,none,none
+TRIP099,DRV004,0,0,+5,ahead,100,Excellent,none,none
+TRIP100,DRV013,0,0,-5,at_risk,95,Excellent,none,none
+TRIP101,DRV016,0,0,+5,ahead,100,Excellent,none,none
+TRIP102,DRV183,0,0,0,on_track,100,Excellent,none,none
+TRIP103,DRV114,0,0,+5,ahead,100,Excellent,none,none
+TRIP104,DRV021,0,0,+5,ahead,100,Excellent,none,none
+TRIP105,DRV100,0,0,+5,ahead,100,Excellent,none,none
+TRIP106,DRV205,0,0,+5,ahead,100,Excellent,none,none
+TRIP107,DRV046,0,0,0,on_track,100,Excellent,none,none
+TRIP108,DRV202,0,0,0,on_track,100,Excellent,none,none
+TRIP109,DRV003,0,0,0,on_track,100,Excellent,none,none
+TRIP110,DRV198,0,0,0,on_track,100,Excellent,none,none
+TRIP111,DRV183,0,0,0,on_track,100,Excellent,none,none
+TRIP112,DRV095,0,0,+5,ahead,100,Excellent,none,none
+TRIP113,DRV056,0,0,-5,at_risk,95,Excellent,none,none
+TRIP114,DRV174,0,0,+5,ahead,100,Excellent,none,none
+TRIP115,DRV132,0,0,-5,at_risk,95,Excellent,none,none
+TRIP116,DRV195,0,0,+5,ahead,100,Excellent,none,none
+TRIP117,DRV032,0,0,-5,at_risk,95,Excellent,none,none
+TRIP118,DRV124,0,0,0,on_track,100,Excellent,none,none
+TRIP119,DRV160,0,0,+5,ahead,100,Excellent,none,none
+TRIP120,DRV016,0,0,+5,ahead,100,Excellent,none,none
+TRIP121,DRV004,0,0,+5,ahead,100,Excellent,none,none
+TRIP122,DRV161,0,0,+5,ahead,100,Excellent,none,none
+TRIP123,DRV126,0,0,+5,ahead,100,Excellent,none,none
+TRIP124,DRV084,0,0,+5,ahead,100,Excellent,none,none
+TRIP125,DRV198,0,0,0,on_track,100,Excellent,none,none
+TRIP126,DRV157,0,0,+5,ahead,100,Excellent,none,none
+TRIP127,DRV108,0,0,+5,ahead,100,Excellent,none,none
+TRIP128,DRV141,0,0,-5,at_risk,95,Excellent,none,none
+TRIP129,DRV052,0,0,+5,ahead,100,Excellent,none,none
+TRIP130,DRV094,0,0,0,on_track,100,Excellent,none,none
+TRIP131,DRV197,0,0,+5,ahead,100,Excellent,none,none
+TRIP132,DRV170,0,0,+5,ahead,100,Excellent,none,none
+TRIP133,DRV179,0,0,0,on_track,100,Excellent,none,none
+TRIP134,DRV031,0,0,-5,at_risk,95,Excellent,none,none
+TRIP135,DRV143,0,0,0,on_track,100,Excellent,none,none
+TRIP136,DRV039,0,0,+5,ahead,100,Excellent,none,none
+TRIP137,DRV021,0,0,+5,ahead,100,Excellent,none,none
+TRIP138,DRV127,0,0,+5,ahead,100,Excellent,none,none
+TRIP139,DRV043,0,0,0,on_track,100,Excellent,none,none
+TRIP140,DRV086,0,0,-5,at_risk,95,Excellent,none,none
+TRIP141,DRV060,0,0,+5,ahead,100,Excellent,none,none
+TRIP142,DRV053,0,0,+5,ahead,100,Excellent,none,none
+TRIP143,DRV042,0,0,+5,ahead,100,Excellent,none,none
+TRIP144,DRV042,0,0,+5,ahead,100,Excellent,none,none
+TRIP145,DRV074,0,0,0,on_track,100,Excellent,none,none
+TRIP146,DRV039,0,0,+5,ahead,100,Excellent,none,none
+TRIP147,DRV138,0,0,0,on_track,100,Excellent,none,none
+TRIP148,DRV024,0,0,+5,ahead,100,Excellent,none,none
+TRIP149,DRV134,0,0,-5,at_risk,95,Excellent,none,none
+TRIP150,DRV179,0,0,0,on_track,100,Excellent,none,none
+TRIP151,DRV001,0,0,+5,ahead,100,Excellent,none,none
+TRIP152,DRV038,0,0,0,on_track,100,Excellent,none,none
+TRIP153,DRV001,0,0,+5,ahead,100,Excellent,none,none
+TRIP154,DRV169,0,0,+5,ahead,100,Excellent,none,none
+TRIP155,DRV127,0,0,+5,ahead,100,Excellent,none,none
+TRIP156,DRV048,0,0,0,on_track,100,Excellent,none,none
+TRIP157,DRV156,0,0,0,on_track,100,Excellent,none,none
+TRIP158,DRV205,0,0,+5,ahead,100,Excellent,none,none
+TRIP159,DRV025,0,0,+5,ahead,100,Excellent,none,none
+TRIP160,DRV068,0,0,+5,ahead,100,Excellent,none,none
+TRIP161,DRV130,0,0,+5,ahead,100,Excellent,none,none
+TRIP162,DRV193,0,0,0,on_track,100,Excellent,none,none
+TRIP163,DRV104,0,0,-5,at_risk,95,Excellent,none,none
+TRIP164,DRV017,0,0,0,on_track,100,Excellent,none,none
+TRIP165,DRV203,0,0,+5,ahead,100,Excellent,none,none
+TRIP166,DRV193,0,0,0,on_track,100,Excellent,none,none
+TRIP167,DRV118,0,0,+5,ahead,100,Excellent,none,none
+TRIP168,DRV107,0,0,+5,ahead,100,Excellent,none,none
+TRIP169,DRV047,0,0,-5,at_risk,95,Excellent,none,none
+TRIP170,DRV063,0,0,0,on_track,100,Excellent,none,none
+TRIP171,DRV048,0,0,0,on_track,100,Excellent,none,none
+TRIP172,DRV007,0,0,+5,ahead,100,Excellent,none,none
+TRIP173,DRV096,0,0,+5,ahead,100,Excellent,none,none
+TRIP174,DRV085,0,0,-5,at_risk,95,Excellent,none,none
+TRIP175,DRV046,0,0,0,on_track,100,Excellent,none,none
+TRIP176,DRV102,0,0,+5,ahead,100,Excellent,none,none
+TRIP177,DRV046,0,0,0,on_track,100,Excellent,none,none
+TRIP178,DRV046,0,0,0,on_track,100,Excellent,none,none
+TRIP179,DRV147,0,0,+5,ahead,100,Excellent,none,none
+TRIP180,DRV175,0,0,+5,ahead,100,Excellent,none,none
+TRIP181,DRV133,0,0,+5,ahead,100,Excellent,none,none
+TRIP182,DRV064,0,0,+5,ahead,100,Excellent,none,none
+TRIP183,DRV106,0,0,0,on_track,100,Excellent,none,none
+TRIP184,DRV132,0,0,-5,at_risk,95,Excellent,none,none
+TRIP185,DRV178,0,0,0,on_track,100,Excellent,none,none
+TRIP186,DRV107,0,0,+5,ahead,100,Excellent,none,none
+TRIP187,DRV084,0,0,+5,ahead,100,Excellent,none,none
+TRIP188,DRV031,0,0,-5,at_risk,95,Excellent,none,none
+TRIP189,DRV018,0,0,+5,ahead,100,Excellent,none,none
+TRIP190,DRV165,0,0,0,on_track,100,Excellent,none,none
+TRIP191,DRV118,0,0,+5,ahead,100,Excellent,none,none
+TRIP192,DRV191,0,0,+5,ahead,100,Excellent,none,none
+TRIP193,DRV050,0,0,+5,ahead,100,Excellent,none,none
+TRIP194,DRV161,0,0,+5,ahead,100,Excellent,none,none
+TRIP195,DRV160,0,0,+5,ahead,100,Excellent,none,none
+TRIP196,DRV147,0,0,+5,ahead,100,Excellent,none,none
+TRIP197,DRV052,0,0,+5,ahead,100,Excellent,none,none
+TRIP198,DRV192,0,0,+5,ahead,100,Excellent,none,none
+TRIP199,DRV035,0,0,+5,ahead,100,Excellent,none,none
+TRIP200,DRV136,0,0,+5,ahead,100,Excellent,none,none
+TRIP201,DRV060,0,0,+5,ahead,100,Excellent,none,none
+TRIP202,DRV085,0,0,-5,at_risk,95,Excellent,none,none
+TRIP203,DRV146,0,0,+5,ahead,100,Excellent,none,none
+TRIP204,DRV075,0,0,0,on_track,100,Excellent,none,none
+TRIP205,DRV033,0,0,-5,at_risk,95,Excellent,none,none
+TRIP206,DRV138,0,0,0,on_track,100,Excellent,none,none
+TRIP207,DRV131,0,0,0,on_track,100,Excellent,none,none
+TRIP208,DRV178,0,0,0,on_track,100,Excellent,none,none
+TRIP209,DRV198,0,0,0,on_track,100,Excellent,none,none
+TRIP210,DRV172,0,0,0,on_track,100,Excellent,none,none
+TRIP211,DRV205,0,0,+5,ahead,100,Excellent,none,none
+TRIP212,DRV016,0,0,+5,ahead,100,Excellent,none,none
+TRIP213,DRV067,0,0,+5,ahead,100,Excellent,none,none
+TRIP214,DRV199,0,0,0,on_track,100,Excellent,none,none
+TRIP215,DRV110,0,0,0,on_track,100,Excellent,none,none
+TRIP216,DRV012,0,0,+5,ahead,100,Excellent,none,none
+TRIP217,DRV094,0,0,0,on_track,100,Excellent,none,none
+TRIP218,DRV205,0,0,+5,ahead,100,Excellent,none,none
+TRIP219,DRV133,0,0,+5,ahead,100,Excellent,none,none
+TRIP220,DRV138,0,0,0,on_track,100,Excellent,none,none
