@@ -6,7 +6,8 @@ import Card from "../../components/Card";
 import CardGrid from "../../components/CardGrid";
 import Badge from "../../components/Badge";
 import ProgressBar from "../../components/ProgressBar";
-import { getEarningsData, getGoalProgressTimeline, trips as allTrips } from "../../lib/driverData";
+import { api } from "../../lib/api";
+import { getGoalProgressTimeline, trips as allTrips } from "../../lib/driverData";
 
 export default function EarningsPage() {
   const { t } = useLanguage();
@@ -14,7 +15,7 @@ export default function EarningsPage() {
   const timeline = useMemo(() => getGoalProgressTimeline(), []);
 
   useEffect(() => {
-    setData(getEarningsData());
+    api.getEarnings().then(setData);
   }, []);
 
   const topTrips = useMemo(() => {
@@ -43,21 +44,21 @@ export default function EarningsPage() {
 
       <div className="mt-4">
         <CardGrid cols={3}>
-          <Card title={t("earningsVelocity")} subtitle="Current $/hr">
+          <Card title={t("earningsVelocity")} subtitle="Current ₹/hr earned">
             <div style={{ fontSize: 30, fontWeight: 900 }}>
-              ${data.currentVelocity.toFixed(2)} <span className="muted" style={{ fontSize: 14, fontWeight: 800 }}>/ hr</span>
+              ₹{data.currentVelocity.toFixed(2)} <span className="muted" style={{ fontSize: 14, fontWeight: 800 }}>/ hr</span>
             </div>
             <div className="mt-3">
               <ProgressBar value={Math.min(100, Math.round((data.currentVelocity / (data.targetVelocity || 1)) * 100))} label="Velocity vs target" />
             </div>
           </Card>
           <Card title="Cumulative" subtitle="So far today">
-            <div style={{ fontSize: 30, fontWeight: 900 }}>${data.currentEarnings.toFixed(2)}</div>
-            <div className="muted mt-2">Projected: ${data.projectedEarnings.toFixed(2)}</div>
+            <div style={{ fontSize: 30, fontWeight: 900 }}>₹{data.currentEarnings.toFixed(2)}</div>
+            <div className="muted mt-2">Projected: ₹{data.projectedEarnings.toFixed(2)}</div>
           </Card>
           <Card title="Target" subtitle="Goal for shift">
-            <div style={{ fontSize: 30, fontWeight: 900 }}>${data.targetEarnings.toFixed(0)}</div>
-            <div className="muted mt-2">${data.targetVelocity.toFixed(2)}/hr baseline</div>
+            <div style={{ fontSize: 30, fontWeight: 900 }}>₹{data.targetEarnings.toFixed(0)}</div>
+            <div className="muted mt-2">₹{data.targetVelocity.toFixed(2)}/hr baseline</div>
           </Card>
         </CardGrid>
       </div>
@@ -83,7 +84,7 @@ export default function EarningsPage() {
                     <div style={{ fontWeight: 900 }}>{tr.from} → {tr.to}</div>
                     <div className="muted" style={{ fontSize: 12 }}>{tr.time} • {tr.duration}</div>
                   </div>
-                  <Badge tone="neutral">${(tr.fare || 0).toFixed(2)}</Badge>
+                  <Badge tone="neutral">₹{(tr.fare || 0).toFixed(2)}</Badge>
                 </div>
               ))}
             </div>

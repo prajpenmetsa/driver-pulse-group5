@@ -5,7 +5,7 @@ import { useLanguage } from "../../components/LanguageContext";
 import Card from "../../components/Card";
 import Badge from "../../components/Badge";
 import Button from "../../components/Button";
-import { getTripsData } from "../../lib/driverData";
+import { api } from "../../lib/api";
 
 export default function TripsPage() {
   const { t } = useLanguage();
@@ -15,7 +15,7 @@ export default function TripsPage() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    setData(getTripsData());
+    api.getTrips().then(setData);
   }, []);
 
   const pageSize = 6;
@@ -89,7 +89,7 @@ export default function TripsPage() {
                       <td>{trip.from}</td>
                       <td>{trip.to}</td>
                       <td>{trip.duration}</td>
-                      <td>${Number(trip.fare || 0).toFixed(2)}</td>
+                      <td>₹{Number(trip.fare || 0).toFixed(2)}</td>
                       <td>{trip.rating}</td>
                       <td>
                         <Badge tone={tone}>{score}</Badge>
@@ -137,7 +137,7 @@ export default function TripsPage() {
               </div>
               <div className="col">
                 <div className="muted" style={{ fontSize: 12 }}>Fare</div>
-                <div style={{ fontWeight: 900 }}>${Number(selected.fare || 0).toFixed(2)}</div>
+                <div style={{ fontWeight: 900 }}>₹{Number(selected.fare || 0).toFixed(2)}</div>
               </div>
               <div className="col">
                 <div className="muted" style={{ fontSize: 12 }}>Rating</div>

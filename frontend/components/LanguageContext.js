@@ -39,6 +39,7 @@ export const translations = {
     statusAhead: "Ahead",
     statusOnTrack: "On Track",
     statusAtRisk: "At Risk",
+    flaggedEvents: "Flagged Events",
     operations: "Operations",
     collectingData: "Collecting data…",
     velocitySuppressionHint:
@@ -78,6 +79,7 @@ export const translations = {
     statusAhead: "आगे",
     statusOnTrack: "पथ पर",
     statusAtRisk: "जोखिम में",
+    flaggedEvents: "फ्लैग किए गए इवेंट",
     operations: "ऑपरेशन्स",
     collectingData: "डेटा एकत्र किया जा रहा है…",
     velocitySuppressionHint:
@@ -117,59 +119,21 @@ export const translations = {
     statusAhead: "Adelantado",
     statusOnTrack: "En camino",
     statusAtRisk: "En riesgo",
+    flaggedEvents: "Eventos marcados",
     operations: "Operaciones",
     collectingData: "Recopilando datos…",
     velocitySuppressionHint:
       "La velocidad se muestra después de 3 viajes o 1 hora para evitar la inflación al inicio del turno.",
   },
-  fr: { languageCode: "fr", languageLabel: "French" },
-  de: { languageCode: "de", languageLabel: "German" },
-  pt: { languageCode: "pt", languageLabel: "Portuguese" },
-  zh: { languageCode: "zh", languageLabel: "Chinese" },
-  ja: { languageCode: "ja", languageLabel: "Japanese" },
-  ar: { languageCode: "ar", languageLabel: "Arabic" },
-  ta: { languageCode: "ta", languageLabel: "Tamil" },
-  te: { languageCode: "te", languageLabel: "Telugu" },
-  kn: { languageCode: "kn", languageLabel: "Kannada" },
-  bn: { languageCode: "bn", languageLabel: "Bengali" },
-  mr: { languageCode: "mr", languageLabel: "Marathi" },
-  gu: { languageCode: "gu", languageLabel: "Gujarati" },
-  pa: { languageCode: "pa", languageLabel: "Punjabi" },
 };
 
 const LANGUAGE_KEYS = [
   "en",
   "hi",
   "es",
-  "fr",
-  "de",
-  "pt",
-  "zh",
-  "ja",
-  "ar",
-  "ta",
-  "te",
-  "kn",
-  "bn",
-  "mr",
-  "gu",
-  "pa",
 ];
 
 const fallbackLabels = {
-  fr: "French",
-  de: "German",
-  pt: "Portuguese",
-  zh: "Chinese",
-  ja: "Japanese",
-  ar: "Arabic",
-  ta: "Tamil",
-  te: "Telugu",
-  kn: "Kannada",
-  bn: "Bengali",
-  mr: "Marathi",
-  gu: "Gujarati",
-  pa: "Punjabi",
 };
 
 export function LanguageProvider({ children }) {

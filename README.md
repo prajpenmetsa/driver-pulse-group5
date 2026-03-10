@@ -18,10 +18,9 @@ Driver Pulse gives rideshare drivers a clearer picture of two things that matter
 2. [Setup](#setup)
 3. [Running the Pipeline](#running-the-pipeline)
 4. [Output Files](#output-files)
-5. [System Architecture](#system-architecture)
-6. [Algorithmic Decisions](#algorithmic-decisions)
-7. [Trade-offs — Critical Analysis](#trade-offs--critical-analysis)
-8. [Privacy Constraints](#privacy-constraints)
+5. [Algorithmic Decisions](#algorithmic-decisions)
+6. [Trade-offs — Critical Analysis](#trade-offs--critical-analysis)
+7. [Privacy Constraints](#privacy-constraints)
 
 ---
 
@@ -42,31 +41,41 @@ driver-pulse-group5/
 │       ├── flagged_moments.csv
 │       └── trip_summaries.csv
 │
+├── preprocessing/                 # Signal detection + data expansion
+│   ├── audio_processing.py        # Detects high-audio episodes per trip
+│   ├── motion_processing.py       # Detects harsh driving events per trip
+│   └── generate_audio_data.py     # Synthetic audio dataset expansion (MELAUDIS-calibrated)
+│
 ├── src/                           # Core pipeline modules
-│   ├── audio_detector.py          # Detects high-audio episodes per trip
-│   ├── motion_detector.py         # Detects harsh driving events per trip
 │   ├── signal_combiner.py         # Time-window join + Isolation Forest training/inference
-│   ├── tag_anomaly_scores.py      # Scales anomaly score → 0–10 + driver guidance tags
 │   ├── earnings_engine.py         # Earnings velocity and goal forecasting
 │   └── driver_pulse_score.py      # Composite Driver Pulse Score (0–100) per trip
 │
-├── preprocessing/
-│   ├── exploration_notes.txt      # Full data exploration findings
-│   └── generate_audio_data.py     # Synthetic audio dataset expansion (MELAUDIS-calibrated)
+├── analytics/                     # Post-processing and scoring
+│   ├── tag_anomaly_scores.py      # Scales anomaly score → 0–10 + driver guidance tags
+│   └── final_summary.py           # Legacy flat-penalty summary (deprecated)
 │
+├── api/                           # Backend API server (serves CSV data to frontend)
+│   └── server.py                  # Flask REST API — reads pipeline outputs and serves JSON
+│
+├── frontend/                      # Next.js dashboard
+│   ├── app/                       # Page routes (dashboard, safety, earnings, trips, etc.)
+│   ├── components/                # Reusable UI components
+│   ├── lib/                       # Data layer (api.js, driverData.js)
+│   └── outputs/                   # Legacy mock CSVs (unused — frontend reads from API)
+│
+├── audio_raw/                     # MELAUDIS WAV files for calibrating synthetic audio
 │
 └── outputs/
     ├── audio/
     │   ├── audio_flags.csv             # Detected audio episodes (original 30 trips)
     │   └── audio_flags_expanded.csv    # Expanded to 1000 events, 50 trips using MELAUDIS dataset
-    │                                       # (https://figshare.com/articles/dataset/_b_MELAUDIS_The_First_Acoustic_ITS_Dataset_in_Urban_Environment_b_/27115870)
-    │                                       # Features used: outdoor vehicle dB levels (cars, trams, motorcycles), attenuated 20 dB for in-cabin baseline
     ├── motion/
     │   ├── motion_flags.csv            # Detected motion events (original 30 trips)
-    │   └── motion_flags_expanded.csv   # Expanded dataset using Kaggle "Driver Behaviour Analysis Using Sensor" dataset
-    │                                       # (https://www.kaggle.com/datasets/eishkaran/driver-behaviour-analysis-using-sensor)
-    │                                       # Features used: manuever_acceleration, acc_dir_change
-    ├── driver_pulse_scores.csv     # Composite Driver Pulse Score per trip (0–100)
+    │   └── motion_flags_expanded.csv   # Expanded dataset using Kaggle dataset
+    ├── driver_pulse_scores.csv         # Composite Driver Pulse Score per trip (0–100)
+    ├── driver_pulse_summary.csv        # Legacy summary (from analytics/final_summary.py)
+    ├── trip_summaries.csv              # Earnings velocity output per driver
     └── combined/
         ├── combined_windows.csv        # Time-window joined feature table (all 50 trips)
         ├── anomaly_scores.csv          # Isolation Forest scores on held-out test set
@@ -87,13 +96,13 @@ driver-pulse-group5/
 ### Install dependencies
 
 ```bash
-pip install numpy pandas scikit-learn soundfile scipy
+pip install numpy pandas scikit-learn soundfile scipy flask flask-cors
 ```
 
 Or if using system Python on macOS:
 
 ```bash
-pip install numpy pandas scikit-learn soundfile scipy --break-system-packages
+pip install numpy pandas scikit-learn soundfile scipy flask flask-cors --break-system-packages
 ```
 
 ### Data
@@ -110,13 +119,13 @@ Run modules in this order. Each step reads from the previous step's outputs.
 
 ### 1. Detect audio episodes
 ```bash
-python3 src/audio_detector.py
+python3 preprocessing/audio_processing.py
 # Output: outputs/audio/audio_flags.csv
 ```
 
 ### 2. Detect motion events
 ```bash
-python3 src/motion_detector.py
+python3 preprocessing/motion_processing.py
 # Output: outputs/motion/motion_flags.csv
 ```
 
@@ -139,7 +148,7 @@ python3 src/signal_combiner.py
 
 ### 5. Tag anomaly scores with driver guidance
 ```bash
-python3 src/tag_anomaly_scores.py
+python3 analytics/tag_anomaly_scores.py
 # Output: outputs/combined/inference_tagged.csv
 ```
 
@@ -152,6 +161,18 @@ python3 src/earnings_engine.py
 ```bash
 python3 src/driver_pulse_score.py
 # Output: outputs/driver_pulse_scores.csv
+```
+
+### 8. Start the API server
+```bash
+python3 api/server.py
+# Serves JSON endpoints at http://localhost:5001/api/...
+```
+
+### 9. Start the frontend
+```bash
+cd frontend && pnpm install && pnpm dev
+# Dashboard at http://localhost:3000
 ```
 
 ---

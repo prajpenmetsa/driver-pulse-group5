@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Load data
-motion = pd.read_csv("outputs/motion_flags.csv")
-audio = pd.read_csv("outputs/audio_flags.csv")
+motion = pd.read_csv("outputs/motion/motion_flags.csv")
+audio = pd.read_csv("outputs/audio/audio_flags.csv")
 
 # Count events per trip
 motion_counts = motion.groupby("trip_id").size().reset_index(name="motion_events")

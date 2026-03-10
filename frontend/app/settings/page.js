@@ -10,33 +10,34 @@ import LanguageDropdown from "../../components/LanguageDropdown";
 import Card from "../../components/Card";
 import CardGrid from "../../components/CardGrid";
 import ToggleSwitch from "../../components/ToggleSwitch";
+
 import Button from "../../components/Button";
 
 export default function SettingsPage() {
   const { t } = useLanguage();
-  const [goals, setGoals] = useState({ targetEarnings: 400, targetTrips: 18 });
+  const [goals, setGoals] = useState({ targetEarnings: 10000, targetTrips: 30 });
   const [notifications, setNotifications] = useState({
     trip: true,
     safety: true,
     earnings: true,
     daily: true,
   });
-  const [appearance, setAppearance] = useState("system");
   const [account, setAccount] = useState({ name: "Alex", vehicle: "Toyota Prius • Blue" });
+  const [editingAccount, setEditingAccount] = useState(false);
+  const [editDraft, setEditDraft] = useState({ name: "", vehicle: "" });
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     const g = window.localStorage.getItem("driver_pulse_goals");
     const n = window.localStorage.getItem("driver_pulse_notifications");
-    const a = window.localStorage.getItem("driver_pulse_appearance");
     const acc = window.localStorage.getItem("driver_pulse_account");
 
     if (g) {
       try {
         const parsed = JSON.parse(g);
         setGoals({
-          targetEarnings: Number(parsed?.targetEarnings) || 400,
-          targetTrips: Number(parsed?.targetTrips) || 18,
+          targetEarnings: Number(parsed?.targetEarnings) || 10000,
+          targetTrips: Number(parsed?.targetTrips) || 30,
         });
       } catch {}
     }
@@ -51,7 +52,6 @@ export default function SettingsPage() {
         });
       } catch {}
     }
-    if (a) setAppearance(a);
     if (acc) {
       try {
         const parsed = JSON.parse(acc);
@@ -75,11 +75,6 @@ export default function SettingsPage() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    window.localStorage.setItem("driver_pulse_appearance", appearance);
-  }, [appearance]);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
     window.localStorage.setItem("driver_pulse_account", JSON.stringify(account));
   }, [account]);
 
@@ -93,34 +88,12 @@ export default function SettingsPage() {
       </div>
 
       <div className="mt-4">
-        <CardGrid cols={2}>
-          <Card title={t("language")} subtitle={t("preferredLanguage")}>
-            <LanguageDropdown variant="full" />
-            <div className="muted mt-3" style={{ fontSize: 13 }}>
-              Language is saved locally and persists after refresh.
-            </div>
-          </Card>
-
-          <Card title="Appearance" subtitle="Light / Dark / System">
-            <div className="col gap-3">
-              {["light", "dark", "system"].map((mode) => (
-                <label key={mode} className="row gap-2" style={{ fontWeight: 800 }}>
-                  <input
-                    type="radio"
-                    name="appearance"
-                    value={mode}
-                    checked={appearance === mode}
-                    onChange={(e) => setAppearance(e.target.value)}
-                  />
-                  {mode[0].toUpperCase() + mode.slice(1)}
-                </label>
-              ))}
-              <div className="muted" style={{ fontSize: 13 }}>
-                (UI uses a clean light dashboard + dark sidebar by default.)
-              </div>
-            </div>
-          </Card>
-        </CardGrid>
+        <Card title={t("language")} subtitle={t("preferredLanguage")}>
+          <LanguageDropdown variant="full" />
+          <div className="muted mt-3" style={{ fontSize: 13 }}>
+            Language is saved locally and persists after refresh.
+          </div>
+        </Card>
       </div>
 
       <div className="mt-4">
@@ -149,9 +122,6 @@ export default function SettingsPage() {
                   aria-label="Trips target"
                 />
               </label>
-              <div className="muted" style={{ fontSize: 13 }}>
-                Stored in localStorage and applied on Dashboard immediately.
-              </div>
             </div>
           </Card>
 
@@ -186,25 +156,71 @@ export default function SettingsPage() {
 
       <div className="mt-4">
         <Card title="Account" subtitle="Driver profile and vehicle info">
-          <div className="row between wrap gap-3">
-            <div className="col">
-              <div className="muted" style={{ fontSize: 12 }}>Driver name</div>
-              <div style={{ fontWeight: 900, fontSize: 18 }}>{account.name}</div>
-              <div className="muted mt-2" style={{ fontSize: 12 }}>Vehicle</div>
-              <div style={{ fontWeight: 800 }}>{account.vehicle}</div>
+          {editingAccount ? (
+            <div className="col gap-3">
+              <label className="col gap-2" style={{ fontWeight: 800 }}>
+                Driver name
+                <input
+                  className="ui-input"
+                  type="text"
+                  value={editDraft.name}
+                  onChange={(e) => setEditDraft((d) => ({ ...d, name: e.target.value }))}
+                  aria-label="Driver name"
+                />
+              </label>
+              <label className="col gap-2" style={{ fontWeight: 800 }}>
+                Vehicle
+                <input
+                  className="ui-input"
+                  type="text"
+                  value={editDraft.vehicle}
+                  onChange={(e) => setEditDraft((d) => ({ ...d, vehicle: e.target.value }))}
+                  aria-label="Vehicle"
+                />
+              </label>
+              <div className="row gap-2">
+                <Button
+                  variant="primary"
+                  size="md"
+                  ariaLabel="Save account"
+                  onClick={() => {
+                    setAccount({ name: editDraft.name, vehicle: editDraft.vehicle });
+                    setEditingAccount(false);
+                  }}
+                >
+                  Save
+                </Button>
+                <Button
+                  variant="secondary"
+                  size="md"
+                  ariaLabel="Cancel editing"
+                  onClick={() => setEditingAccount(false)}
+                >
+                  Cancel
+                </Button>
+              </div>
             </div>
-            <Button
-              variant="secondary"
-              size="md"
-              ariaLabel="Edit account"
-              onClick={() => {
-                const next = account.name === "Alex" ? "Jordan" : "Alex";
-                setAccount((a) => ({ ...a, name: next }));
-              }}
-            >
-              Edit
-            </Button>
-          </div>
+          ) : (
+            <div className="row between wrap gap-3">
+              <div className="col">
+                <div className="muted" style={{ fontSize: 12 }}>Driver name</div>
+                <div style={{ fontWeight: 900, fontSize: 18 }}>{account.name}</div>
+                <div className="muted mt-2" style={{ fontSize: 12 }}>Vehicle</div>
+                <div style={{ fontWeight: 800 }}>{account.vehicle}</div>
+              </div>
+              <Button
+                variant="secondary"
+                size="md"
+                ariaLabel="Edit account"
+                onClick={() => {
+                  setEditDraft({ name: account.name, vehicle: account.vehicle });
+                  setEditingAccount(true);
+                }}
+              >
+                Edit
+              </Button>
+            </div>
+          )}
         </Card>
       </div>
     </div>
