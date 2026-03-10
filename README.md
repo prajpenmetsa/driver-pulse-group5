@@ -7,7 +7,7 @@ Driver Pulse gives rideshare drivers a clearer picture of two things that matter
 
 ## Live Demo & Video
 
-- **Deployment:** `[DEPLOYMENT LINK PLACEHOLDER]`
+- **Deployment:** `https://driver-pulse-group5-nqflpoo2v-sauryas24s-projects.vercel.app/`
 - **Demo video:** `https://drive.google.com/file/d/1CMngr83ZClM1fztDSvjUrKv15n53ZyPv/view?usp=sharing`
 
 ---
@@ -258,3 +258,4 @@ Score is clamped to [0, 100].
 | < 60 | High risk |
 
 ---
+
